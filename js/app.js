@@ -50,10 +50,12 @@ function difficultyBadge(item) {
 }
 
 function renderTestCard(item, index, prefix = 'test') {
+  const fieldName = `${prefix}-${item.id}`;
   const options = item.options.map((option, i) => `
     <label class="option">
-      <input type="radio" name="${prefix}-${item.id}" value="${i}">
-      <span>${String.fromCharCode(1072 + i)}) ${escapeHtml(option)}</span>
+      <input type="radio" name="${fieldName}" value="${i}">
+      <span class="option-letter">${String.fromCharCode(1072 + i)})</span>
+      <span class="option-text">${escapeHtml(option)}</span>
     </label>
   `).join('');
 

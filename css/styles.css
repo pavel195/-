@@ -182,18 +182,39 @@ button.copy { background: #f0f3f8; color: var(--text); padding: 9px 12px; }
 }
 .badge.hard { background: #fff2f2; color: var(--bad); }
 .badge.medium { background: #fff8e8; color: var(--warn); }
-.options { display: grid; gap: 8px; margin: 12px 0; }
-.option {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  padding: 10px 12px;
+.options {
+  display: grid;
+  overflow: hidden;
+  margin: 14px 0;
   border: 1px solid var(--line);
   border-radius: 12px;
-  cursor: pointer;
+  background: #fff;
 }
+.option {
+  display: grid;
+  grid-template-columns: 30px 42px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  min-height: 46px;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  color: var(--text);
+}
+.option:last-child { border-bottom: 0; }
 .option:hover { background: #f7faff; }
-.option input { min-width: auto; margin-top: 3px; }
+.option:has(input:checked) { background: #edf5ff; }
+.option input { min-width: auto; margin: 3px 0 0; }
+.option-letter {
+  color: var(--primary-dark);
+  font-weight: 800;
+  white-space: nowrap;
+}
+.option-text {
+  min-width: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
 .explanation {
   display: none;
   margin-top: 12px;
@@ -278,4 +299,9 @@ code {
   select, input { min-width: 100%; width: 100%; }
   .filters label, .exam-tools label { width: 100%; }
   button.primary, button.secondary { width: 100%; }
+  .option {
+    grid-template-columns: 24px 34px minmax(0, 1fr);
+    gap: 8px;
+    padding: 10px 12px;
+  }
 }
