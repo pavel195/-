@@ -1,4 +1,4 @@
-name: Deploy
+name: Validate
 
 on:
   push:
@@ -7,11 +7,8 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-gec-trainer-site
+  group: validate-gec-trainer-site
   cancel-in-progress: true
-
-env:
-  SITE_PORT: ${{ vars.SITE_PORT || '8011' }}
 
 jobs:
   validate:
@@ -27,53 +24,3 @@ jobs:
 
       - name: Validate bank
         run: node scripts/validate-bank.mjs
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: validate
-    env:
-      HAS_DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY != '' }}
-      HAS_DEPLOY_CONFIG: ${{ vars.DEPLOY_HOST != '' && vars.DEPLOY_USER != '' && vars.DEPLOY_PATH != '' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Skip deploy without deploy configuration
-        if: env.HAS_DEPLOY_SSH_KEY != 'true' || env.HAS_DEPLOY_CONFIG != 'true'
-        run: echo "Deploy configuration is not complete; validation completed, deploy skipped."
-
-      - name: Prepare SSH
-        if: env.HAS_DEPLOY_SSH_KEY == 'true' && env.HAS_DEPLOY_CONFIG == 'true'
-        env:
-          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
-        run: |
-          mkdir -p ~/.ssh
-          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
-
-      - name: Sync files
-        if: env.HAS_DEPLOY_SSH_KEY == 'true' && env.HAS_DEPLOY_CONFIG == 'true'
-        env:
-          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
-          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
-          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
-        run: |
-          rsync -az --delete \
-            --exclude '.git' \
-            --exclude '.github' \
-            --exclude '.DS_Store' \
-            --exclude '.env' \
-            --exclude '.project-memory' \
-            -e "ssh -i ~/.ssh/deploy_key" \
-            ./ "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
-
-      - name: Restart service
-        if: env.HAS_DEPLOY_SSH_KEY == 'true' && env.HAS_DEPLOY_CONFIG == 'true'
-        env:
-          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
-          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
-          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
-        run: |
-          ssh -i ~/.ssh/deploy_key "$DEPLOY_USER@$DEPLOY_HOST" \
-            "cd '$DEPLOY_PATH' && SITE_PORT='$SITE_PORT' docker compose up -d && docker compose ps"
