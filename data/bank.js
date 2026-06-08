@@ -4806,3 +4806,17 @@ Object.entries(balancedAnswerOptions).forEach(([id, options]) => {
   const item = window.GEC_DATA.tests.find(test => test.id === id);
   if (item) item.options = options;
 });
+
+window.GEC_DATA.tests.forEach((item, index) => {
+  const targetAnswerIndex = index % item.options.length;
+  if (item.answer === targetAnswerIndex) return;
+
+  const correctOption = item.options[item.answer];
+  const distractors = item.options.filter((_, optionIndex) => optionIndex !== item.answer);
+  item.options = [
+    ...distractors.slice(0, targetAnswerIndex),
+    correctOption,
+    ...distractors.slice(targetAnswerIndex)
+  ];
+  item.answer = targetAnswerIndex;
+});

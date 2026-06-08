@@ -50,8 +50,8 @@ for (const item of data.tests ?? []) {
   validateId(item, seenIds, 'tests');
   validateTopicAndDifficulty(item, 'tests');
   if (!item.question?.trim()) fail(`tests ${item.id}: missing question`);
-  if (!Array.isArray(item.options) || item.options.length < 2) {
-    fail(`tests ${item.id}: expected at least two options`);
+  if (!Array.isArray(item.options) || item.options.length !== 4) {
+    fail(`tests ${item.id}: expected exactly four options`);
   }
   if (!Number.isInteger(item.answer) || item.answer < 0 || item.answer >= item.options.length) {
     fail(`tests ${item.id}: answer index is out of options range`);
@@ -59,7 +59,15 @@ for (const item of data.tests ?? []) {
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
 
   const optionLengths = item.options.map(option => String(option).trim().length);
+  const normalizedOptions = item.options.map(option => String(option).trim().toLowerCase());
+  if (new Set(normalizedOptions).size !== normalizedOptions.length) {
+    fail(`tests ${item.id}: duplicate answer options`);
+  }
   const maxOptionLength = Math.max(...optionLengths);
+  const minOptionLength = Math.min(...optionLengths);
+  if (maxOptionLength - minOptionLength > 60) {
+    fail(`tests ${item.id}: answer option lengths are too different`);
+  }
   const shortestDistractorLength = Math.min(
     ...optionLengths.filter((_, index) => index !== item.answer)
   );
@@ -87,6 +95,16 @@ for (const item of data.practice ?? []) {
 const advancedTests = data.tests.filter(item => item.difficulty === 'medium' || item.difficulty === 'hard');
 if (advancedTests.length < 40) {
   fail(`expected at least 40 medium/hard test questions, got ${advancedTests.length}`);
+}
+
+const answerPositionCounts = [0, 0, 0, 0];
+for (const item of data.tests ?? []) {
+  answerPositionCounts[item.answer] += 1;
+}
+const maxAnswerPositionCount = Math.max(...answerPositionCounts);
+const minAnswerPositionCount = Math.min(...answerPositionCounts);
+if (maxAnswerPositionCount - minAnswerPositionCount > 2) {
+  fail(`answer positions are imbalanced: ${answerPositionCounts.join(', ')}`);
 }
 
 if (errors.length) {
