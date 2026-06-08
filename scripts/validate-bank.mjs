@@ -57,6 +57,16 @@ for (const item of data.tests ?? []) {
     fail(`tests ${item.id}: answer index is out of options range`);
   }
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
+
+  const optionLengths = item.options.map(option => String(option).trim().length);
+  const maxOptionLength = Math.max(...optionLengths);
+  const shortestDistractorLength = Math.min(
+    ...optionLengths.filter((_, index) => index !== item.answer)
+  );
+  const correctOptionLength = optionLengths[item.answer];
+  if (correctOptionLength === maxOptionLength && correctOptionLength - shortestDistractorLength > 35) {
+    fail(`tests ${item.id}: correct option is much longer than distractors`);
+  }
 }
 
 for (const item of data.oral ?? []) {
