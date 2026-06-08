@@ -25,6 +25,42 @@ http://localhost:8000
 python -m http.server 8000
 ```
 
+### Вариант 3. Через Docker Compose
+
+```bash
+SITE_PORT=8011 docker compose up -d
+```
+
+Затем открой:
+
+```text
+https://localhost:8011
+```
+
+Остановить:
+
+```bash
+docker compose down
+```
+
+## Деплой
+
+В репозитории есть GitHub Actions workflow `.github/workflows/deploy.yml`.
+Он запускается на push в ветку `master`, проверяет банк вопросов и обновляет сайт на сервере:
+
+```text
+https://chipkineev.ru:8011
+```
+
+Для автоматического деплоя нужен secret `DEPLOY_SSH_KEY`: приватный SSH-ключ пользователя,
+которому разрешён вход на сервер `oem@chipkineev.ru`.
+На сервере должны быть установлены Docker и Docker Compose.
+Если сервер не имеет доступа к Docker Hub, заранее загрузите на него базовый образ
+`nginx:alpine`.
+
+`Dockerfile` оставлен для окружений, где доступна сборка образа; основной `docker-compose.yml`
+запускает предзагруженный nginx-образ и монтирует статические файлы read-only.
+
 ## Что внутри
 
 ```text

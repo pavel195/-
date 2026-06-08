@@ -3649,3 +3649,708 @@ window.GEC_DATA = {
     }
   ]
 };
+
+window.GEC_DATA.meta.version = "1.1.0";
+
+window.GEC_DATA.tests.push(
+  {
+    "id": "t202",
+    "topic": "Java и Spring",
+    "question": "Что произойдёт, если поток вызовет wait() у объекта, монитор которого он захватил, но notify()/notifyAll() никогда не будет вызван?",
+    "options": [
+      "Поток освободит монитор и останется ждать до interruption/timeout или уведомления",
+      "Поток продолжит выполнение сразу после wait()",
+      "Монитор останется захваченным на всё время ожидания",
+      "JVM автоматически вызовет notifyAll()"
+    ],
+    "answer": 0,
+    "explanation": "wait() освобождает монитор и переводит поток в ожидание. Без notify/notifyAll, timeout или interruption поток может ждать бесконечно.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t203",
+    "topic": "Java и Spring",
+    "question": "Какая реализация Map сохраняет порядок вставки элементов?",
+    "options": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "WeakHashMap"
+    ],
+    "answer": 1,
+    "explanation": "LinkedHashMap хранит двусвязный список записей и по умолчанию итерируется в порядке вставки.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t204",
+    "topic": "Java и Spring",
+    "question": "Какой Stream API pipeline корректно собирает ненулевые элементы в List?",
+    "options": [
+      "stream.filter(Objects::nonNull).collect(Collectors.toList())",
+      "stream.collect(Objects::nonNull).toList()",
+      "stream.map(Objects::nonNull).collect(Collectors.toList())",
+      "stream.reduce(Collectors.toList())"
+    ],
+    "answer": 0,
+    "explanation": "filter оставляет только элементы, для которых предикат true, а collect(Collectors.toList()) собирает результат в список.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t205",
+    "topic": "Java и Spring",
+    "question": "Какое утверждение о volatile в Java верно?",
+    "options": [
+      "volatile делает compound-операции вроде count++ атомарными",
+      "volatile гарантирует видимость изменений между потоками и запрещает часть переупорядочиваний",
+      "volatile заменяет synchronized для любых критических секций",
+      "volatile применим только к final-полям"
+    ],
+    "answer": 1,
+    "explanation": "volatile даёт happens-before для чтения/записи переменной, но не делает составные операции атомарными.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t206",
+    "topic": "Java и Spring",
+    "question": "Что из перечисленного НЕ является областью памяти JVM?",
+    "options": [
+      "Heap",
+      "Thread stack",
+      "Code Cache",
+      "RAM Cache"
+    ],
+    "answer": 3,
+    "explanation": "RAM Cache не является стандартной runtime-областью памяти JVM, в отличие от heap, stack и code cache.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t207",
+    "topic": "Java и Spring",
+    "question": "Нужна ли @Autowired на единственном конструкторе Spring-компонента в современных версиях Spring?",
+    "options": [
+      "Да, без неё бин никогда не создастся",
+      "Нет, если конструктор единственный, Spring использует его автоматически",
+      "Да, но только в @Controller",
+      "Нет, constructor injection в Spring невозможен"
+    ],
+    "answer": 1,
+    "explanation": "При единственном конструкторе Spring может выполнить constructor injection без явной @Autowired.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t208",
+    "topic": "Java и Spring",
+    "question": "Что из перечисленного является функциональным интерфейсом?",
+    "options": [
+      "Runnable",
+      "Iterable",
+      "String",
+      "ArrayList"
+    ],
+    "answer": 0,
+    "explanation": "Runnable имеет один абстрактный метод run(), поэтому подходит для lambda-выражений.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t209",
+    "topic": "Java и Spring",
+    "question": "Что создаёт Executors.newFixedThreadPool(10)?",
+    "options": [
+      "Пул с максимум 10 рабочими потоками и неограниченной очередью задач",
+      "Новый поток на каждую задачу без ограничений",
+      "ForkJoinPool с work-stealing",
+      "Планировщик задач с cron-выражениями"
+    ],
+    "answer": 0,
+    "explanation": "newFixedThreadPool создаёт ThreadPoolExecutor с фиксированным числом потоков и LinkedBlockingQueue.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t210",
+    "topic": "Java и Spring",
+    "question": "Что такое false sharing в многопоточных приложениях?",
+    "options": [
+      "Ситуация, когда потоки меняют разные переменные в одной cache line и мешают кешированию друг друга",
+      "Ошибка, при которой два потока используют один и тот же объект без equals()",
+      "Случайная потеря данных из-за GC",
+      "Дублирование HTTP-запроса в Spring MVC"
+    ],
+    "answer": 0,
+    "explanation": "False sharing вызывает лишнюю invalidation cache line, даже если потоки логически работают с разными полями.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t211",
+    "topic": "Java и Spring",
+    "question": "Какая аннотация Spring Boot обычно включает auto-configuration, component scan и configuration?",
+    "options": [
+      "@SpringBootApplication",
+      "@EnableWebServer",
+      "@RunServer",
+      "@AutoInject"
+    ],
+    "answer": 0,
+    "explanation": "@SpringBootApplication объединяет @SpringBootConfiguration, @EnableAutoConfiguration и @ComponentScan.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t212",
+    "topic": "Java и Spring",
+    "question": "Какой паттерн позволяет менять поведение объекта во время выполнения за счёт замены алгоритма?",
+    "options": [
+      "Strategy",
+      "Singleton",
+      "Factory Method",
+      "Adapter"
+    ],
+    "answer": 0,
+    "explanation": "Strategy инкапсулирует семейство алгоритмов и позволяет выбирать конкретную стратегию во время выполнения.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t213",
+    "topic": "Java и Spring",
+    "question": "Какая стратегия генерации идентификаторов JPA хранит следующее значение в отдельной таблице?",
+    "options": [
+      "GenerationType.IDENTITY",
+      "GenerationType.SEQUENCE",
+      "GenerationType.TABLE",
+      "GenerationType.AUTO_INCREMENT"
+    ],
+    "answer": 2,
+    "explanation": "TABLE использует таблицу генератора, что обычно медленнее sequence/identity.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t214",
+    "topic": "Java и Spring",
+    "question": "Какая аннотация JUnit 5 выполняет метод перед каждым тестом?",
+    "options": [
+      "@BeforeEach",
+      "@BeforeAll",
+      "@BeforeTest",
+      "@SetupEach"
+    ],
+    "answer": 0,
+    "explanation": "@BeforeEach запускается перед каждым @Test; @BeforeAll - один раз перед всеми тестами класса.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t215",
+    "topic": "Java и Spring",
+    "question": "Какое утверждение о микросервисной архитектуре неверно?",
+    "options": [
+      "Сервисы могут разворачиваться независимо",
+      "Сервисы взаимодействуют через сетевые протоколы",
+      "Все сервисы обязаны использовать одну общую базу данных",
+      "Каждый сервис отвечает за свою бизнес-область"
+    ],
+    "answer": 2,
+    "explanation": "Общая БД для всех сервисов усиливает связность и противоречит идее независимых границ владения данными.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t216",
+    "topic": "SQL и базы данных",
+    "question": "Почему индекс по колонке может не использоваться при условии WHERE lower(email) = 'a@b.ru'?",
+    "options": [
+      "Потому что функция над колонкой меняет выражение поиска, если нет функционального индекса",
+      "Потому что индексы не работают со строками",
+      "Потому что WHERE всегда выполняется после SELECT",
+      "Потому что lower() отключает транзакции"
+    ],
+    "answer": 0,
+    "explanation": "Обычный индекс по email не равен индексу по lower(email). Нужен functional index или нормализация значения.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t217",
+    "topic": "SQL и базы данных",
+    "question": "Какой уровень изоляции PostgreSQL предотвращает dirty read, non-repeatable read и phantom read за счёт сериализуемого порядка транзакций?",
+    "options": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Serializable"
+    ],
+    "answer": 3,
+    "explanation": "Serializable даёт эффект последовательного выполнения транзакций, но может требовать retry при serialization failure.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t218",
+    "topic": "SQL и базы данных",
+    "question": "Что обычно означает N+1 проблема в ORM?",
+    "options": [
+      "Один запрос за списком и отдельный запрос за связанными данными для каждой строки",
+      "Ошибка индексации массива с нуля",
+      "Слишком много колонок в SELECT",
+      "Наличие одной лишней миграции"
+    ],
+    "answer": 0,
+    "explanation": "N+1 резко увеличивает число запросов. Лечат join fetch, prefetch/select_related или batch loading.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t219",
+    "topic": "Python",
+    "question": "Почему изменяемый объект как значение аргумента по умолчанию может быть опасен?",
+    "options": [
+      "Он создаётся один раз при определении функции и переиспользуется между вызовами",
+      "Он пересоздаётся на каждой итерации цикла",
+      "Он всегда копируется глубоко",
+      "Он запрещает передачу именованных аргументов"
+    ],
+    "answer": 0,
+    "explanation": "Например, def f(x=[]): будет использовать один и тот же список между вызовами функции.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t220",
+    "topic": "Python",
+    "question": "Что делает descriptor protocol в Python?",
+    "options": [
+      "Позволяет объекту управлять доступом к атрибуту через __get__, __set__ и __delete__",
+      "Автоматически сериализует объект в JSON",
+      "Запускает отдельный поток для каждого метода",
+      "Запрещает наследование класса"
+    ],
+    "answer": 0,
+    "explanation": "Descriptors лежат в основе property, методов классов и многих ORM-полей.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t221",
+    "topic": "Python",
+    "question": "Почему GIL не гарантирует потокобезопасность операций над бизнес-состоянием?",
+    "options": [
+      "GIL защищает выполнение байткода, но составные операции всё равно могут перемежаться между потоками",
+      "GIL отключает все блокировки",
+      "GIL работает только в PyPy",
+      "GIL делает multiprocessing невозможным"
+    ],
+    "answer": 0,
+    "explanation": "Состояние вроде read-modify-write нужно защищать lock-ами или проектировать без shared mutable state.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t222",
+    "topic": "Алгоритмы и структуры данных",
+    "question": "Какова асимптотика поиска в хеш-таблице при большом числе коллизий в одной корзине без балансировки?",
+    "options": [
+      "O(1) всегда",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": 2,
+    "explanation": "В худшем случае все ключи попадают в одну цепочку, и поиск становится линейным.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t223",
+    "topic": "Алгоритмы и структуры данных",
+    "question": "Почему quicksort имеет худший случай O(n^2)?",
+    "options": [
+      "Если pivot постоянно делит массив крайне неравномерно",
+      "Потому что сравнение двух чисел занимает O(n)",
+      "Потому что он всегда использует дополнительную память O(n^2)",
+      "Потому что массив нельзя сортировать на месте"
+    ],
+    "answer": 0,
+    "explanation": "При разбиениях 0 и n-1 глубина рекурсии становится O(n), а суммарная работа O(n^2).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t224",
+    "topic": "NLP, LLM и текстовый поиск",
+    "question": "Почему в RAG-системе опасно оценивать качество только по cosine similarity найденных документов?",
+    "options": [
+      "Similarity не гарантирует фактическую полезность ответа и не проверяет groundedness генерации",
+      "Cosine similarity всегда равна нулю для русских текстов",
+      "Similarity нельзя считать для dense embeddings",
+      "Она автоматически проверяет hallucination"
+    ],
+    "answer": 0,
+    "explanation": "Нужны метрики retrieval и generation: recall@k, MRR, faithfulness, answer correctness и ручная проверка сложных кейсов.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t225",
+    "topic": "NLP, LLM и текстовый поиск",
+    "question": "Зачем при гибридном поиске объединяют BM25 и vector search?",
+    "options": [
+      "Чтобы совместить точные лексические совпадения и семантическую близость",
+      "Чтобы полностью отказаться от ранжирования",
+      "Чтобы заменить индексацию регулярными выражениями",
+      "Чтобы векторная модель обучалась внутри SQL-запроса"
+    ],
+    "answer": 0,
+    "explanation": "BM25 хорошо ловит термины и редкие слова, vector search - смысловую близость. Их часто объединяют reranking-ом.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t226",
+    "topic": "Машинное обучение и Data Science",
+    "question": "Почему leakage через признак, появляющийся после целевого события, делает модель непригодной?",
+    "options": [
+      "Модель видит информацию из будущего и показывает завышенное качество на валидации",
+      "Модель становится слишком маленькой",
+      "Признак автоматически удаляет выбросы",
+      "Leakage влияет только на скорость обучения"
+    ],
+    "answer": 0,
+    "explanation": "Data leakage нарушает реалистичность train/test и приводит к провалу на настоящих новых данных.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t227",
+    "topic": "Машинное обучение и Data Science",
+    "question": "Когда stratified split особенно важен?",
+    "options": [
+      "При классификации с дисбалансом классов",
+      "При любой регрессии с MSE",
+      "Только при unsupervised learning",
+      "Только когда признаков больше миллиона"
+    ],
+    "answer": 0,
+    "explanation": "Stratification сохраняет пропорции классов в train/test и снижает риск нерепрезентативной оценки.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t228",
+    "topic": "Web, HTML/CSS/JS и Django",
+    "question": "Почему innerHTML с пользовательским вводом опасен?",
+    "options": [
+      "Он может выполнить внедрённый HTML/скрипт и привести к XSS",
+      "Он всегда очищает DOM от событий",
+      "Он запрещён во всех браузерах",
+      "Он работает только с CSS"
+    ],
+    "answer": 0,
+    "explanation": "Пользовательский HTML нужно экранировать, санитизировать или вставлять как textContent.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t229",
+    "topic": "Web, HTML/CSS/JS и Django",
+    "question": "Для чего в Django используют select_related?",
+    "options": [
+      "Чтобы загрузить связанные ForeignKey/OneToOne объекты одним SQL JOIN",
+      "Чтобы выбрать CSS-класс элемента",
+      "Чтобы создать миграцию",
+      "Чтобы включить CSRF"
+    ],
+    "answer": 0,
+    "explanation": "select_related помогает убрать N+1 запросы для одиночных связей.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t230",
+    "topic": "ОС и Linux",
+    "question": "Что показывает код завершения процесса 0 в Unix/Linux?",
+    "options": [
+      "Успешное завершение",
+      "Сегментационную ошибку",
+      "Процесс был остановлен SIGKILL",
+      "Команда не найдена"
+    ],
+    "answer": 0,
+    "explanation": "По соглашению exit code 0 означает успех, ненулевые коды - ошибки или особые состояния.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t231",
+    "topic": "ОС и Linux",
+    "question": "Почему команда chmod 777 для веб-каталога обычно плохая идея?",
+    "options": [
+      "Она даёт запись всем пользователям и увеличивает риск компрометации",
+      "Она делает каталог только для чтения",
+      "Она запрещает запуск файлов владельцу",
+      "Она отключает сетевой порт"
+    ],
+    "answer": 0,
+    "explanation": "Права нужно выдавать минимально необходимым пользователям и группам.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t232",
+    "topic": "Сети и HTTP",
+    "question": "Почему PUT считается идемпотентным, а POST обычно нет?",
+    "options": [
+      "Повтор одного и того же PUT приводит ресурс к тому же состоянию, POST часто создаёт новое действие/ресурс",
+      "PUT никогда не изменяет данные",
+      "POST всегда кешируется браузером",
+      "PUT работает только через HTTPS"
+    ],
+    "answer": 0,
+    "explanation": "Идемпотентность описывает эффект повторного одинакового запроса на состояние системы.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t233",
+    "topic": "Сети и HTTP",
+    "question": "Что проверяет SNI при TLS-подключении к виртуальному хосту?",
+    "options": [
+      "Имя хоста, которое клиент передаёт серверу до выбора сертификата",
+      "Размер TCP-окна",
+      "Версию HTML-документа",
+      "Количество DNS NS-записей"
+    ],
+    "answer": 0,
+    "explanation": "SNI позволяет серверу выбрать правильный сертификат для домена на одном IP.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t234",
+    "topic": "Архитектура, микросервисы и C4",
+    "question": "Какой риск появляется при синхронной цепочке service A -> B -> C -> D?",
+    "options": [
+      "Рост задержки и каскадные отказы при проблеме в глубине цепочки",
+      "Автоматическая транзакционность всех сервисов",
+      "Невозможность логирования",
+      "Запрет горизонтального масштабирования"
+    ],
+    "answer": 0,
+    "explanation": "Длинные синхронные цепочки требуют timeouts, retries, circuit breaker и осознанных границ ответственности.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t235",
+    "topic": "Архитектура, микросервисы и C4",
+    "question": "Что показывает уровень Container в модели C4?",
+    "options": [
+      "Основные приложения/сервисы/хранилища внутри системы и их взаимодействия",
+      "Только Docker-контейнеры",
+      "Последовательность вызовов методов",
+      "Физическое расположение серверов в стойке"
+    ],
+    "answer": 0,
+    "explanation": "В C4 container - это разворачиваемая или исполняемая часть системы, не обязательно Docker.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t236",
+    "topic": "Docker, Kubernetes и инфраструктура",
+    "question": "Почему контейнер без healthcheck может считаться running, хотя приложение внутри не готово?",
+    "options": [
+      "Docker видит только состояние процесса, а не прикладную готовность сервиса",
+      "Docker никогда не отслеживает процессы",
+      "Healthcheck нужен только для баз данных",
+      "Running означает успешный HTTP 200"
+    ],
+    "answer": 0,
+    "explanation": "Healthcheck проверяет прикладной сценарий готовности, например HTTP endpoint или команду диагностики.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t237",
+    "topic": "Docker, Kubernetes и инфраструктура",
+    "question": "Зачем в Kubernetes разделяют readinessProbe и livenessProbe?",
+    "options": [
+      "Readiness управляет получением трафика, liveness - перезапуском зависшего контейнера",
+      "Readiness перезапускает контейнер, liveness масштабирует deployment",
+      "Обе проверки полностью одинаковы",
+      "Они нужны только StatefulSet"
+    ],
+    "answer": 0,
+    "explanation": "Неправильное смешивание probes может вызвать лишние рестарты или отправку трафика в неготовый pod.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t238",
+    "topic": "Git",
+    "question": "Почему force push в общую ветку опасен?",
+    "options": [
+      "Он переписывает удалённую историю и может сломать работу других участников",
+      "Он удаляет Git с сервера",
+      "Он делает все коммиты read-only",
+      "Он запрещает pull request"
+    ],
+    "answer": 0,
+    "explanation": "Если нужен force push, безопаснее использовать --force-with-lease и понимать, чью историю переписываете.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t239",
+    "topic": "Git",
+    "question": "Когда git revert предпочтительнее git reset для уже опубликованного коммита?",
+    "options": [
+      "Когда нужно отменить изменения без переписывания общей истории",
+      "Когда нужно удалить весь репозиторий",
+      "Когда коммит ещё не создан",
+      "Когда нужно изменить remote URL"
+    ],
+    "answer": 0,
+    "explanation": "revert создаёт новый коммит с обратным изменением и сохраняет историю для остальных участников.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t240",
+    "topic": "Cloud и ITSM",
+    "question": "Чем SLO отличается от SLA?",
+    "options": [
+      "SLO - внутренний целевой показатель качества, SLA - договорённость с пользователем/клиентом с последствиями",
+      "SLO всегда юридический договор, SLA только метрика CPU",
+      "SLO используется только в Docker",
+      "SLA не связан с качеством сервиса"
+    ],
+    "answer": 0,
+    "explanation": "SLO помогает управлять надёжностью, SLA фиксирует обещания и часто ответственность.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t241",
+    "topic": "Cloud и ITSM",
+    "question": "Что такое error budget в SRE-подходе?",
+    "options": [
+      "Допустимый объём недоступности/ошибок относительно SLO",
+      "Сумма денег на покупку серверов",
+      "Количество исключений в коде",
+      "Лимит Docker images"
+    ],
+    "answer": 0,
+    "explanation": "Error budget помогает балансировать скорость изменений и надёжность сервиса.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t242",
+    "topic": "SQL и базы данных",
+    "question": "Почему foreign key без индекса на дочерней таблице может замедлять DELETE из родительской таблицы?",
+    "options": [
+      "СУБД должна проверять ссылки в дочерней таблице, и без индекса это может стать полным сканированием",
+      "Foreign key всегда создаёт hash join",
+      "DELETE не работает с foreign key",
+      "Индекс нужен только для SELECT"
+    ],
+    "answer": 0,
+    "explanation": "Индекс на дочернем FK помогает быстро найти зависимые строки при проверках и каскадных операциях.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t243",
+    "topic": "Машинное обучение и Data Science",
+    "question": "Почему accuracy может вводить в заблуждение при сильном дисбалансе классов?",
+    "options": [
+      "Модель может всегда предсказывать большинство и получить высокий accuracy при плохом recall меньшинства",
+      "Accuracy нельзя считать для бинарной классификации",
+      "Accuracy равна loss",
+      "Accuracy всегда меньше F1"
+    ],
+    "answer": 0,
+    "explanation": "При дисбалансе нужно смотреть precision, recall, F1, PR-AUC и confusion matrix.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "t244",
+    "topic": "Web, HTML/CSS/JS и Django",
+    "question": "Почему CSRF-защита важна для cookie-based аутентификации?",
+    "options": [
+      "Браузер автоматически прикладывает cookie к запросу на домен, и злоумышленник может инициировать действие со сторонней страницы",
+      "CSRF нужен только для GET-запросов",
+      "Cookie никогда не отправляются автоматически",
+      "CSRF защищает от SQL-инъекций напрямую"
+    ],
+    "answer": 0,
+    "explanation": "CSRF-токен подтверждает, что действие инициировано легитимной страницей приложения.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t245",
+    "topic": "Docker, Kubernetes и инфраструктура",
+    "question": "Почему secrets не стоит передавать в Docker image через ARG?",
+    "options": [
+      "ARG может попасть в историю слоёв/metadata образа и утечь при публикации",
+      "ARG доступен только после удаления контейнера",
+      "ARG шифруется Docker по умолчанию",
+      "ARG запрещает build cache"
+    ],
+    "answer": 0,
+    "explanation": "Секреты лучше передавать runtime-механизмами, secret store или безопасными переменными окружения.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "t246",
+    "topic": "Сети и HTTP",
+    "question": "Что может означать успешный ping при недоступности сайта по HTTPS?",
+    "options": [
+      "ICMP до хоста проходит, но TCP 443, TLS, HTTP-сервис или firewall могут быть проблемой",
+      "HTTPS обязан работать, если ping успешен",
+      "DNS всегда сломан",
+      "Сайт работает только по UDP"
+    ],
+    "answer": 0,
+    "explanation": "Диагностика должна отдельно проверять DNS, TCP-порт, TLS handshake и HTTP-ответ.",
+    "difficulty": "medium"
+  }
+);
+
+window.GEC_DATA.oral.push(
+  {
+    "id": "o042",
+    "topic": "Java и Spring",
+    "question": "Объясните разницу между visibility, atomicity и ordering в Java Memory Model на примере volatile и synchronized.",
+    "answer": "Visibility означает, что поток видит изменения другого потока. Atomicity означает неделимость операции. Ordering ограничивает переупорядочивание. volatile даёт visibility и ordering для одной переменной, но не атомарность составных операций; synchronized даёт взаимное исключение и happens-before при входе/выходе из монитора.",
+    "keywords": ["JMM", "volatile", "synchronized", "happens-before"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "o043",
+    "topic": "SQL и базы данных",
+    "question": "Как диагностировать медленный SQL-запрос и какие выводы можно сделать из EXPLAIN ANALYZE?",
+    "answer": "Нужно смотреть план выполнения, фактическое и ожидаемое число строк, типы join, seq/index scan, сортировки, использование временных файлов, время узлов плана. Затем проверить индексы, статистику, селективность условий, N+1 и необходимость переписать запрос.",
+    "keywords": ["EXPLAIN ANALYZE", "index scan", "seq scan", "statistics"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "o044",
+    "topic": "NLP, LLM и текстовый поиск",
+    "question": "Какие ошибки бывают в RAG-пайплайне и как отделить проблему retrieval от проблемы генерации?",
+    "answer": "Retrieval-проблемы видны, когда нужный документ не попал в top-k или ранжируется низко. Generation-проблемы появляются, когда контекст релевантный, но ответ искажает факты. Проверяют recall@k/MRR, ручные golden-наборы, reranking, цитирование источников и метрики groundedness.",
+    "keywords": ["RAG", "retrieval", "reranking", "groundedness"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "o045",
+    "topic": "Docker, Kubernetes и инфраструктура",
+    "question": "Чем отличаются readinessProbe и livenessProbe и почему неверная настройка может ухудшить доступность?",
+    "answer": "ReadinessProbe отвечает, можно ли отправлять pod трафик. LivenessProbe отвечает, нужно ли перезапустить контейнер. Если liveness проверяет внешнюю зависимость или слишком агрессивна, сервис может уйти в цикл рестартов; если readiness слаба, трафик попадёт в неготовый pod.",
+    "keywords": ["readinessProbe", "livenessProbe", "availability"],
+    "difficulty": "medium"
+  }
+);
+
+window.GEC_DATA.practice.push(
+  {
+    "id": "p044",
+    "topic": "NLP, LLM и текстовый поиск",
+    "title": "Оценка RAG на golden-наборе",
+    "task": "Спроектируйте мини-пайплайн оценки RAG: есть 50 вопросов, ожидаемые источники и эталонные ответы. Опишите метрики retrieval и генерации, формат отчёта и действия при плохом recall@5.",
+    "expected": "Ожидается разделение retrieval/generation, recall@k/MRR, проверка groundedness, анализ ошибок chunking/embedding/rerank и план улучшений.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "p045",
+    "topic": "SQL и базы данных",
+    "title": "Оптимизация отчётного SQL-запроса",
+    "task": "Дан медленный отчёт по заказам за месяц с join users/orders/payments. Опишите, как снять EXPLAIN ANALYZE, какие индексы проверить и как убедиться, что оптимизация не меняет результат.",
+    "expected": "Ожидается план диагностики, индексы на FK/date/status, сравнение результатов до/после, проверка NULL/дубликатов и регрессионный SQL-кейс.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "p046",
+    "topic": "Docker, Kubernetes и инфраструктура",
+    "title": "Compose-деплой статического сайта",
+    "task": "Сделайте Dockerfile и docker-compose.yml для статического сайта на nginx. Добавьте порт из env, restart policy и healthcheck. Опишите команды деплоя и rollback.",
+    "expected": "Ожидается nginx image, COPY статических файлов, SITE_PORT, docker compose up -d --build, healthcheck и понятный rollback через предыдущую версию.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "p047",
+    "topic": "Web, HTML/CSS/JS и Django",
+    "title": "Защита формы от XSS и CSRF",
+    "task": "Есть форма комментариев с cookie-based логином. Опишите и реализуйте меры против stored XSS и CSRF, включая серверную и клиентскую часть.",
+    "expected": "Ожидается экранирование/санитизация вывода, запрет опасного HTML, CSRF token, SameSite cookie, проверки negative cases.",
+    "difficulty": "hard"
+  }
+);
