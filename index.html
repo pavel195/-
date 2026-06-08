@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ГЭК Тренажёр</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Локальный тренажёр</p>
+      <h1>ГЭК Тренажёр</h1>
+      <p class="hero-text">Банк тестовых, устных и практических заданий по темам: Python, Java, SQL, ML, NLP, Web, Docker, Git, сети и архитектура.</p>
+    </div>
+    <div class="hero-card">
+      <div class="stat"><span id="statTests">0</span><small>тестов</small></div>
+      <div class="stat"><span id="statOral">0</span><small>устных</small></div>
+      <div class="stat"><span id="statPractice">0</span><small>практик</small></div>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Разделы">
+    <button class="tab active" data-tab="exam">Экзамен</button>
+    <button class="tab" data-tab="tests">Тесты</button>
+    <button class="tab" data-tab="oral">Устные</button>
+    <button class="tab" data-tab="practice">Практика</button>
+    <button class="tab" data-tab="bank">Банк</button>
+  </nav>
+
+  <main class="container">
+    <section id="exam" class="panel active">
+      <div class="panel-head">
+        <div>
+          <h2>Режим «как на ГЭК»</h2>
+          <p>Генерирует билет: 12 тестовых вопросов, 3 устных вопроса и 1 практическое задание.</p>
+        </div>
+        <button id="generateExam" class="primary">Сгенерировать билет</button>
+      </div>
+      <div class="exam-tools">
+        <label>Тема
+          <select id="examTopic"></select>
+        </label>
+        <label>Сложность
+          <select id="examDifficulty">
+            <option value="all">Любая</option>
+            <option value="base">База</option>
+            <option value="medium">Средняя</option>
+            <option value="hard">Сложная</option>
+          </select>
+        </label>
+        <button id="checkExam" class="secondary">Проверить тестовую часть</button>
+      </div>
+      <div id="examResult" class="result"></div>
+      <div id="examContent"></div>
+    </section>
+
+    <section id="tests" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Тестовые вопросы</h2>
+          <p>Выбери тему и количество вопросов. После ответа нажми проверку.</p>
+        </div>
+        <button id="generateTest" class="primary">Набрать тест</button>
+      </div>
+      <div class="filters">
+        <label>Тема
+          <select id="testTopic"></select>
+        </label>
+        <label>Сложность
+          <select id="testDifficulty">
+            <option value="all">Любая</option>
+            <option value="base">База</option>
+            <option value="medium">Средняя</option>
+            <option value="hard">Сложная</option>
+          </select>
+        </label>
+        <label>Количество
+          <input id="testCount" type="number" min="1" max="50" value="20" />
+        </label>
+        <button id="checkTest" class="secondary">Проверить</button>
+      </div>
+      <div id="testResult" class="result"></div>
+      <div id="testQuestions"></div>
+    </section>
+
+    <section id="oral" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Устные вопросы</h2>
+          <p>Тренируй формулировку ответа. Эталон открывается отдельно.</p>
+        </div>
+        <button id="generateOral" class="primary">Набрать устные</button>
+      </div>
+      <div class="filters">
+        <label>Тема
+          <select id="oralTopic"></select>
+        </label>
+        <label>Количество
+          <input id="oralCount" type="number" min="1" max="20" value="5" />
+        </label>
+      </div>
+      <div id="oralQuestions"></div>
+    </section>
+
+    <section id="practice" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Практические задания</h2>
+          <p>Выбери задачу, реши у себя и отправь решение в чат на проверку.</p>
+        </div>
+      </div>
+      <div class="filters">
+        <label>Тема
+          <select id="practiceTopic"></select>
+        </label>
+        <label>Поиск
+          <input id="practiceSearch" type="search" placeholder="например: RAG, LRU, SQL, Django" />
+        </label>
+      </div>
+      <div id="practiceList"></div>
+    </section>
+
+    <section id="bank" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Общий банк</h2>
+          <p>Статистика по темам и быстрый поиск по всем заданиям.</p>
+        </div>
+      </div>
+      <div class="filters">
+        <label>Поиск по банку
+          <input id="bankSearch" type="search" placeholder="например: JOIN, volatile, Dockerfile" />
+        </label>
+      </div>
+      <div id="topicStats" class="topic-grid"></div>
+      <div id="bankResults"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Работает полностью локально. Можно дополнять файл <code>data/bank.js</code>.</span>
+  </footer>
+
+  <script src="data/bank.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
