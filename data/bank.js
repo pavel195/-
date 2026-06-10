@@ -16,7 +16,7 @@ window.GEC_DATA = {
   "tests": [
     {
       "id": "t001",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какие задачи решают деревья решений?",
       "options": [
         "Только классификацию",
@@ -30,7 +30,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t002",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое дерево решений в ML?",
       "options": [
         "Модель в виде дерева условий, где узлы проверяют признаки, а листья дают результат",
@@ -44,7 +44,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t003",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой график лучше показывает связь между двумя числовыми переменными?",
       "options": [
         "Диаграмма рассеяния",
@@ -58,7 +58,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t004",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой график лучше подходит для распределения числового признака?",
       "options": [
         "Столбчатая диаграмма",
@@ -72,7 +72,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t005",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой метод разбивает объекты на группы по сходству без заранее известных меток?",
       "options": [
         "Регрессия",
@@ -86,7 +86,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t006",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Как называется задача предсказания непрерывной числовой величины?",
       "options": [
         "Классификация",
@@ -100,7 +100,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t007",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой вид обучения основан на взаимодействии агента со средой?",
       "options": [
         "Обучение с учителем",
@@ -114,7 +114,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t008",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "На чём основан случайный лес?",
       "options": [
         "На ансамбле деревьев решений",
@@ -128,7 +128,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t009",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что обычно выдаёт логистическая регрессия?",
       "options": [
         "Кластер",
@@ -142,7 +142,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t010",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое переобучение?",
       "options": [
         "Модель плохо учится даже на train",
@@ -156,7 +156,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t011",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какая метрика часто используется для несбалансированной бинарной классификации?",
       "options": [
         "F1-score",
@@ -170,7 +170,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t012",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что измеряет Recall?",
       "options": [
         "Долю правильных положительных среди предсказанных положительных",
@@ -184,7 +184,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t013",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое Precision?",
       "options": [
         "TP / (TP + FP)",
@@ -198,7 +198,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t014",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какая метрика подходит для регрессии?",
       "options": [
         "Accuracy",
@@ -212,7 +212,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t015",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое регуляризация?",
       "options": [
         "Метод уменьшения переобучения через штраф за сложность модели",
@@ -226,7 +226,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t016",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое функция потерь?",
       "options": [
         "Функция, измеряющая ошибку модели",
@@ -240,7 +240,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t017",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое Feature Engineering?",
       "options": [
         "Создание и преобразование признаков для улучшения модели",
@@ -254,7 +254,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t018",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Для чего нужна кросс-валидация?",
       "options": [
         "Оценить качество модели устойчивее на разных разбиениях данных",
@@ -268,7 +268,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t019",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что делает StandardScaler?",
       "options": [
         "Кодирует категории числами",
@@ -282,7 +282,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t020",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой алгоритм часто требует масштабирования признаков?",
       "options": [
         "kNN",
@@ -296,7 +296,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t021",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое AUC ROC?",
       "options": [
         "Площадь под ROC-кривой",
@@ -310,7 +310,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t022",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой метод используют для выбора k в k-means?",
       "options": [
         "Elbow method",
@@ -324,7 +324,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t023",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой алгоритм кластеризации умеет выделять шумовые точки?",
       "options": [
         "DBSCAN",
@@ -338,7 +338,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t024",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое EDA?",
       "options": [
         "Разведочный анализ данных",
@@ -352,7 +352,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t025",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что из перечисленного НЕ является интервальным/числовым признаком?",
       "options": [
         "Рост",
@@ -366,7 +366,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t026",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Правильное рекуррентное соотношение для Фибоначчи:",
       "options": [
         "F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2)",
@@ -380,7 +380,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t027",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое итерация цикла?",
       "options": [
         "Один повтор выполнения тела цикла",
@@ -394,7 +394,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t028",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какая структура работает по принципу FIFO?",
       "options": [
         "Стек",
@@ -408,7 +408,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t029",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какая структура работает по принципу LIFO?",
       "options": [
         "Стек",
@@ -422,7 +422,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t030",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какой обход графа обычно использует очередь?",
       "options": [
         "DFS",
@@ -436,7 +436,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t031",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какой обход графа часто реализуют рекурсией или стеком?",
       "options": [
         "DFS",
@@ -450,7 +450,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t032",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Сложность бинарного поиска в отсортированном массиве:",
       "options": [
         "O(n)",
@@ -464,7 +464,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t033",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Сложность линейного поиска:",
       "options": [
         "O(1)",
@@ -478,7 +478,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t034",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какое десятичное число соответствует восьмеричному 17?",
       "options": [
         "13",
@@ -492,7 +492,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t035",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое асимптотическая сложность?",
       "options": [
         "Оценка роста времени/памяти алгоритма при увеличении входа",
@@ -506,7 +506,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t036",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какая сложность у вложенного цикла по n и n?",
       "options": [
         "O(n)",
@@ -520,7 +520,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t037",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какая структура данных подходит для проверки скобочной последовательности?",
       "options": [
         "Стек",
@@ -534,7 +534,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t038",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что обычно ищет алгоритм Дейкстры?",
       "options": [
         "Кратчайшие пути от одной вершины в графе с неотрицательными весами",
@@ -548,7 +548,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t039",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Какой алгоритм сортировки обычно имеет O(n log n) в среднем?",
       "options": [
         "Merge sort",
@@ -562,7 +562,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t040",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое рекурсия?",
       "options": [
         "Вызов функцией самой себя",
@@ -576,7 +576,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t041",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое базовый случай рекурсии?",
       "options": [
         "Условие остановки рекурсивных вызовов",
@@ -590,7 +590,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t042",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Для чего используют хеш-таблицу?",
       "options": [
         "Быстрый доступ по ключу",
@@ -604,7 +604,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t043",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое граф?",
       "options": [
         "Множество вершин и рёбер",
@@ -618,7 +618,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t044",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Какой метод списка удаляет элемент по индексу и возвращает его?",
       "options": [
         "pop()",
@@ -632,7 +632,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t045",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Какой метод списка удаляет первый элемент с заданным значением?",
       "options": [
         "pop()",
@@ -646,7 +646,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t046",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает __init__ в классе Python?",
       "options": [
         "Инициализирует объект после создания",
@@ -660,7 +660,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t047",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что будет при делении int на 0?",
       "options": [
         "Вернётся 0",
@@ -674,7 +674,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t048",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Чем список отличается от кортежа?",
       "options": [
         "Список изменяемый, кортеж неизменяемый",
@@ -688,7 +688,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t049",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Когда кортеж может быть ключом словаря?",
       "options": [
         "Если все элементы кортежа хешируемые",
@@ -702,7 +702,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t050",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое декоратор?",
       "options": [
         "Функция/объект, оборачивающий другую функцию/метод и меняющий/расширяющий поведение",
@@ -716,7 +716,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t051",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое генератор?",
       "options": [
         "Объект, который лениво выдаёт значения по одному",
@@ -730,7 +730,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t052",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Какое ключевое слово используется в генераторе?",
       "options": [
         "yield",
@@ -744,7 +744,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t053",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает with open(...) as f?",
       "options": [
         "Открывает файл и гарантирует закрытие через контекстный менеджер",
@@ -758,7 +758,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t054",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что вернёт len([1, 2, 3])?",
       "options": [
         "2",
@@ -772,7 +772,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t055",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает set?",
       "options": [
         "Хранит уникальные элементы",
@@ -786,7 +786,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t056",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое lambda?",
       "options": [
         "Анонимная функция",
@@ -800,7 +800,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t057",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает enumerate(iterable)?",
       "options": [
         "Возвращает пары индекс-значение",
@@ -814,7 +814,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t058",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает zip(a, b)?",
       "options": [
         "Объединяет элементы нескольких последовательностей по позициям",
@@ -828,7 +828,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t059",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое list comprehension?",
       "options": [
         "Краткая запись создания списка",
@@ -842,7 +842,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t060",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Для чего используют try/except?",
       "options": [
         "Для обработки исключений",
@@ -856,7 +856,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t061",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает pip?",
       "options": [
         "Устанавливает Python-пакеты",
@@ -870,7 +870,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t062",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое виртуальное окружение?",
       "options": [
         "Изолированная среда зависимостей проекта",
@@ -884,7 +884,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t063",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое GIL в CPython?",
       "options": [
         "Глобальная блокировка интерпретатора, ограничивающая параллельное выполнение байткода Python потоками",
@@ -898,7 +898,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t064",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что лучше для чтения файла >7 ГБ?",
       "options": [
         "Потоковое чтение по строкам/чанкам",
@@ -912,7 +912,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t065",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает json.loads?",
       "options": [
         "Преобразует JSON-строку в Python-объект",
@@ -926,7 +926,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t066",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что делает pandas DataFrame?",
       "options": [
         "Табличная структура данных",
@@ -940,7 +940,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t067",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что такое реляционная БД?",
       "options": [
         "БД с данными в связанных таблицах",
@@ -954,7 +954,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t068",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Как вывести все поля из Orders?",
       "options": [
         "SELECT ALL FROM Orders;",
@@ -968,7 +968,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t069",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что делает SELECT?",
       "options": [
         "Создаёт таблицу",
@@ -982,7 +982,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t070",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Как правильно сравнить customer_name со строкой Mike?",
       "options": [
         "customer_name = Mike",
@@ -996,7 +996,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t071",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что делает WHERE?",
       "options": [
         "Фильтрует строки",
@@ -1010,7 +1010,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t072",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой оператор группирует строки?",
       "options": [
         "ORDER BY",
@@ -1024,7 +1024,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t073",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой JOIN возвращает совпадения из обеих таблиц?",
       "options": [
         "LEFT JOIN",
@@ -1038,7 +1038,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t074",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "LEFT JOIN возвращает:",
       "options": [
         "Только совпадающие строки",
@@ -1052,7 +1052,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t075",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Чем UNION отличается от UNION ALL?",
       "options": [
         "UNION удаляет дубликаты, UNION ALL оставляет",
@@ -1066,7 +1066,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t076",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой ключ уникально идентифицирует запись?",
       "options": [
         "Внешний ключ",
@@ -1080,7 +1080,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t077",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой ключ связывает таблицы?",
       "options": [
         "Внешний ключ",
@@ -1094,7 +1094,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t078",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что такое транзакция?",
       "options": [
         "Группа операций, выполняемых как единое целое",
@@ -1108,7 +1108,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t079",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что означает Atomicity в ACID?",
       "options": [
         "Операция выполняется полностью или не выполняется совсем",
@@ -1122,7 +1122,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t080",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что делает COUNT(*)?",
       "options": [
         "Считает строки",
@@ -1136,7 +1136,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t081",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Для фильтрации после GROUP BY используют:",
       "options": [
         "WHERE",
@@ -1150,7 +1150,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t082",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Как выбрать имена на букву A?",
       "options": [
         "WHERE name LIKE 'A%'",
@@ -1164,7 +1164,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t083",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что вернёт сравнение NULL = NULL в SQL?",
       "options": [
         "TRUE",
@@ -1178,7 +1178,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t084",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Как проверить NULL?",
       "options": [
         "field = NULL",
@@ -1192,7 +1192,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t085",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что делает ORDER BY?",
       "options": [
         "Сортирует результат",
@@ -1206,7 +1206,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t086",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что такое оконная функция?",
       "options": [
         "Функция, считающая значение по окну строк без схлопывания результата как GROUP BY",
@@ -1220,7 +1220,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t087",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой оператор возвращает общие строки двух запросов?",
       "options": [
         "UNION",
@@ -1234,7 +1234,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t088",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Какой оператор возвращает строки из первого запроса, которых нет во втором?",
       "options": [
         "EXCEPT",
@@ -1248,7 +1248,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t089",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое токенизация?",
       "options": [
         "Разбиение текста на токены/единицы",
@@ -1262,7 +1262,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t090",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое embedding?",
       "options": [
         "Векторное представление текста/объекта",
@@ -1276,7 +1276,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t091",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое RAG?",
       "options": [
         "Подход, где модель дополняется найденным внешним контекстом",
@@ -1290,7 +1290,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t092",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что на вход обычно получает encoder в text2text-модели?",
       "options": [
         "Представление входного текста/вопроса",
@@ -1304,7 +1304,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t093",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Какие функции активации типичны для LSTM?",
       "options": [
         "Sigmoid и tanh",
@@ -1318,7 +1318,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t094",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Какая задача относится к обучению без учителя?",
       "options": [
         "Topic Modeling",
@@ -1332,7 +1332,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t095",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое NER?",
       "options": [
         "Извлечение именованных сущностей",
@@ -1346,7 +1346,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t096",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое большая языковая модель?",
       "options": [
         "Модель, обученная на больших корпусах текста для обработки и генерации языка",
@@ -1360,7 +1360,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t097",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Для чего нужен reranker в RAG?",
       "options": [
         "Переупорядочить найденные документы по релевантности",
@@ -1374,7 +1374,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t098",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое системный промпт?",
       "options": [
         "Инструкция модели о роли, ограничениях и формате ответа",
@@ -1388,7 +1388,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t099",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое cosine similarity?",
       "options": [
         "Мера сходства векторов по углу между ними",
@@ -1402,7 +1402,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t100",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое hallucination у LLM?",
       "options": [
         "Уверенная генерация неверной или неподтверждённой информации",
@@ -1416,7 +1416,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t101",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое температура в генерации LLM?",
       "options": [
         "Параметр случайности/разнообразия ответа",
@@ -1430,7 +1430,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t102",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое chunking в RAG?",
       "options": [
         "Разбиение документов на фрагменты для индексации",
@@ -1444,7 +1444,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t103",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое stop words?",
       "options": [
         "Частые служебные слова, которые иногда исключают из анализа",
@@ -1458,7 +1458,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t104",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Как расшифровывается HTML?",
       "options": [
         "HyperText Markup Language",
@@ -1472,7 +1472,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t105",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Где располагается тег title?",
       "options": [
         "В head",
@@ -1486,7 +1486,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t106",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Есть ли у input закрывающий тег в HTML?",
       "options": [
         "Да, обязателен",
@@ -1500,7 +1500,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t107",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Какие ключевые слова объявляют переменные в JS?",
       "options": [
         "var, let, const",
@@ -1514,7 +1514,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t108",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что будет после arr.length = 0 для непустого массива JS?",
       "options": [
         "Массив очистится",
@@ -1528,7 +1528,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t109",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Верно ли, что в JS всё является объектом?",
       "options": [
         "Да, все значения без исключений",
@@ -1542,7 +1542,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t110",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое CSS?",
       "options": [
         "Язык описания внешнего вида HTML-документа",
@@ -1556,7 +1556,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t111",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое DOM?",
       "options": [
         "Объектная модель HTML-документа",
@@ -1570,7 +1570,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t112",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Какой HTTP-метод обычно используется для получения ресурса?",
       "options": [
         "GET",
@@ -1584,7 +1584,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t113",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Какой HTTP-метод обычно создаёт ресурс?",
       "options": [
         "GET",
@@ -1598,7 +1598,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t114",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое MVC?",
       "options": [
         "Model-View-Controller",
@@ -1612,7 +1612,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t115",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что в Django обычно описывает структуру данных?",
       "options": [
         "models.py",
@@ -1626,7 +1626,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t116",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что делает Django ORM?",
       "options": [
         "Позволяет работать с БД через Python-объекты",
@@ -1640,7 +1640,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t117",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое CSRF?",
       "options": [
         "Атака с подделкой межсайтового запроса",
@@ -1654,7 +1654,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t118",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое REST API?",
       "options": [
         "Архитектурный подход к API с ресурсами и HTTP-методами",
@@ -1668,7 +1668,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t119",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Какой статус HTTP означает “не найдено”?",
       "options": [
         "200",
@@ -1682,7 +1682,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t120",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Какой статус HTTP означает успешное создание?",
       "options": [
         "200",
@@ -1696,7 +1696,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t121",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое middleware в Django?",
       "options": [
         "Промежуточный слой обработки request/response",
@@ -1710,7 +1710,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t122",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какая Map сохраняет порядок вставки?",
       "options": [
         "HashMap",
@@ -1724,7 +1724,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t123",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что делает wait() у объекта с монитором без notify/notifyAll?",
       "options": [
         "Поток может ждать бесконечно/до прерывания/таймаута",
@@ -1738,7 +1738,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t124",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что НЕ входит в типичные области памяти JVM из списка?",
       "options": [
         "Heap",
@@ -1752,7 +1752,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t125",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое volatile?",
       "options": [
         "Гарантирует видимость изменений переменной между потоками",
@@ -1766,7 +1766,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t126",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какой интерфейс является функциональным?",
       "options": [
         "Runnable",
@@ -1780,7 +1780,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t127",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что создаёт Executors.newFixedThreadPool(10)?",
       "options": [
         "Пул с фиксированным числом 10 потоков",
@@ -1794,7 +1794,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t128",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какая аннотация JUnit 5 запускает метод перед каждым тестом?",
       "options": [
         "@BeforeEach",
@@ -1808,7 +1808,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t129",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какой паттерн меняет поведение объекта во время выполнения?",
       "options": [
         "Strategy",
@@ -1822,7 +1822,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t130",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какое утверждение о микросервисах неверно?",
       "options": [
         "Сервисы могут деплоиться независимо",
@@ -1836,7 +1836,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t131",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какая аннотация Spring Boot включает автонастройку и запуск приложения?",
       "options": [
         "@SpringBootApplication",
@@ -1850,7 +1850,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t132",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Какая аннотация JPA помечает сущность?",
       "options": [
         "@Entity",
@@ -1864,7 +1864,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t133",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что делает @RestController?",
       "options": [
         "Объявляет REST-контроллер, методы возвращают тело ответа",
@@ -1878,7 +1878,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t134",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое Stream API?",
       "options": [
         "API для декларативной обработки последовательностей данных",
@@ -1892,7 +1892,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t135",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Как собрать Stream в List?",
       "options": [
         "collect(Collectors.toList())",
@@ -1906,7 +1906,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t136",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое CompletableFuture?",
       "options": [
         "Класс для асинхронных вычислений и композиции результатов",
@@ -1920,7 +1920,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t137",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое ConcurrentHashMap?",
       "options": [
         "Потокобезопасная хеш-таблица для конкурентного доступа",
@@ -1934,7 +1934,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t138",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое false sharing?",
       "options": [
         "Потоки изменяют разные переменные в одной cache line, мешая друг другу",
@@ -1948,7 +1948,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t139",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое garbage collector?",
       "options": [
         "Механизм автоматического освобождения памяти от недостижимых объектов",
@@ -1962,7 +1962,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t140",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое equals/hashCode контракт?",
       "options": [
         "Равные объекты должны иметь одинаковый hashCode",
@@ -1976,7 +1976,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t141",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое Optional?",
       "options": [
         "Контейнер для значения, которое может отсутствовать",
@@ -1990,7 +1990,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t142",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Как создать пустой файл в Linux?",
       "options": [
         "touch file.txt",
@@ -2004,7 +2004,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t143",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Как удалить файл в Linux?",
       "options": [
         "rm file.txt",
@@ -2018,7 +2018,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t144",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Как посмотреть содержимое текущей директории?",
       "options": [
         "ls",
@@ -2032,7 +2032,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t145",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что делает pwd?",
       "options": [
         "Показывает текущую директорию",
@@ -2046,7 +2046,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t146",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что делает grep?",
       "options": [
         "Ищет строки по шаблону",
@@ -2060,7 +2060,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t147",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что делает chmod?",
       "options": [
         "Меняет права доступа",
@@ -2074,7 +2074,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t148",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что делает chown?",
       "options": [
         "Меняет владельца файла",
@@ -2088,7 +2088,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t149",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Как посмотреть процессы?",
       "options": [
         "ps aux",
@@ -2102,7 +2102,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t150",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что такое процесс?",
       "options": [
         "Экземпляр выполняемой программы",
@@ -2116,7 +2116,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t151",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что такое поток?",
       "options": [
         "Единица выполнения внутри процесса",
@@ -2130,7 +2130,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t152",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что делает top/htop?",
       "options": [
         "Показывает процессы и потребление ресурсов",
@@ -2144,7 +2144,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t153",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Что такое переменная окружения?",
       "options": [
         "Пара ключ-значение, доступная процессу",
@@ -2158,7 +2158,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t154",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Какой порт по умолчанию у HTTPS?",
       "options": [
         "80",
@@ -2172,7 +2172,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t155",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Какой порт по умолчанию у HTTP?",
       "options": [
         "80",
@@ -2186,7 +2186,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t156",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Какой протокол автоматически выдаёт IP-адреса?",
       "options": [
         "DNS",
@@ -2200,7 +2200,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t157",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Сколько уровней в модели OSI?",
       "options": [
         "4",
@@ -2214,7 +2214,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t158",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Какой протокол используется для безопасной передачи файлов поверх SSH?",
       "options": [
         "SFTP",
@@ -2228,7 +2228,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t159",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Какой HTTP-метод идемпотентен?",
       "options": [
         "GET",
@@ -2242,7 +2242,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t160",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что делает DNS?",
       "options": [
         "Преобразует доменные имена в IP-адреса",
@@ -2256,7 +2256,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t161",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что такое TCP?",
       "options": [
         "Надёжный транспортный протокол с соединением",
@@ -2270,7 +2270,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t162",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что такое UDP?",
       "options": [
         "Транспортный протокол без установления соединения",
@@ -2284,7 +2284,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t163",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что такое NAT?",
       "options": [
         "Преобразование сетевых адресов",
@@ -2298,7 +2298,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t164",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что такое TLS?",
       "options": [
         "Протокол защиты транспортного соединения",
@@ -2312,7 +2312,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t165",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что означает HTTP 403?",
       "options": [
         "Forbidden — доступ запрещён",
@@ -2326,7 +2326,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t166",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что означает HTTP 500?",
       "options": [
         "Внутренняя ошибка сервера",
@@ -2340,7 +2340,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t167",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Какая UML-диаграмма моделирует взаимодействие объектов во времени?",
       "options": [
         "Диаграмма последовательности",
@@ -2354,7 +2354,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t168",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Какие свойства входят в CAP?",
       "options": [
         "Consistency, Availability, Partition tolerance",
@@ -2368,7 +2368,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t169",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Какое преимущество микросервисной архитектуры?",
       "options": [
         "Независимое развертывание сервисов",
@@ -2382,7 +2382,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t170",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое монолит?",
       "options": [
         "Приложение, где большая часть функциональности разворачивается как единое целое",
@@ -2396,7 +2396,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t171",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое bounded context?",
       "options": [
         "Граница модели предметной области в DDD",
@@ -2410,7 +2410,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t172",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое API Gateway?",
       "options": [
         "Входная точка, маршрутизирующая запросы к сервисам",
@@ -2424,7 +2424,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t173",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое синхронное взаимодействие сервисов?",
       "options": [
         "Сервис ждёт ответ другого сервиса",
@@ -2438,7 +2438,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t174",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое асинхронное взаимодействие сервисов?",
       "options": [
         "Через события/очереди без немедленного ожидания ответа",
@@ -2452,7 +2452,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t175",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое идемпотентность?",
       "options": [
         "Повторный одинаковый запрос даёт тот же эффект",
@@ -2466,7 +2466,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t176",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Уровни C4 обычно включают:",
       "options": [
         "Context, Container, Component, Code",
@@ -2480,7 +2480,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t177",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое SLA?",
       "options": [
         "Соглашение об уровне сервиса",
@@ -2494,7 +2494,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t178",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое incident в ITIL?",
       "options": [
         "Незапланированное прерывание или снижение качества сервиса",
@@ -2508,7 +2508,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t179",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что описывает Dockerfile?",
       "options": [
         "Инструкции для сборки Docker-образа",
@@ -2522,7 +2522,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t180",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что делает docker build?",
       "options": [
         "Собирает Docker image",
@@ -2536,7 +2536,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t181",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что делает docker run?",
       "options": [
         "Запускает контейнер из образа",
@@ -2550,7 +2550,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t182",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое Docker image?",
       "options": [
         "Шаблон/снимок для запуска контейнеров",
@@ -2564,7 +2564,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t183",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое volume в Docker?",
       "options": [
         "Механизм постоянного хранения данных вне слоя контейнера",
@@ -2578,7 +2578,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t184",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое docker-compose.yml?",
       "options": [
         "Файл описания набора сервисов/сетей/volume для Docker Compose",
@@ -2592,7 +2592,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t185",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Какой инструмент используется для оркестрации контейнеров?",
       "options": [
         "Kubernetes",
@@ -2606,7 +2606,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t186",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое Kubernetes Pod?",
       "options": [
         "Минимальная единица запуска, содержащая один или несколько контейнеров",
@@ -2620,7 +2620,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t187",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое Kubernetes Service?",
       "options": [
         "Стабильная точка доступа к набору Pod",
@@ -2634,7 +2634,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t188",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое CI/CD?",
       "options": [
         "Непрерывная интеграция и доставка/развёртывание",
@@ -2648,7 +2648,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t189",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Какая команда показывает историю коммитов?",
       "options": [
         "git log",
@@ -2662,7 +2662,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t190",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Какая команда добавляет изменения в индекс?",
       "options": [
         "git add",
@@ -2676,7 +2676,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t191",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Какая команда создаёт коммит?",
       "options": [
         "git commit",
@@ -2690,7 +2690,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t192",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Что делает git status?",
       "options": [
         "Показывает состояние рабочей директории и индекса",
@@ -2704,7 +2704,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t193",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Чем merge отличается от rebase?",
       "options": [
         "merge создаёт слияние, rebase переносит коммиты на новое основание",
@@ -2718,7 +2718,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t194",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Как отменить незакоммиченные изменения в файле?",
       "options": [
         "git restore file",
@@ -2732,7 +2732,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t195",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что предоставляет PaaS?",
       "options": [
         "Платформу для разработки и запуска приложений без управления низкоуровневой инфраструктурой",
@@ -2746,7 +2746,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t196",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое SaaS?",
       "options": [
         "Готовое приложение как сервис",
@@ -2760,7 +2760,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t197",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое IaaS?",
       "options": [
         "Инфраструктура как сервис: виртуальные машины, сети, диски",
@@ -2774,7 +2774,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t198",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое горизонтальное масштабирование?",
       "options": [
         "Добавление новых экземпляров/серверов",
@@ -2788,7 +2788,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t199",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое вертикальное масштабирование?",
       "options": [
         "Увеличение ресурсов одного сервера",
@@ -2802,7 +2802,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t200",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое Service Mesh?",
       "options": [
         "Инфраструктурный слой для управления межсервисным трафиком, наблюдаемостью и политиками",
@@ -2816,7 +2816,7 @@ window.GEC_DATA = {
     },
     {
       "id": "t201",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое топик в брокере сообщений?",
       "options": [
         "Логический канал/категория сообщений",
@@ -2832,7 +2832,7 @@ window.GEC_DATA = {
   "oral": [
     {
       "id": "o001",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Чем отличается LEFT JOIN от INNER JOIN?",
       "answer": "INNER JOIN возвращает только совпавшие строки из обеих таблиц. LEFT JOIN возвращает все строки из левой таблицы и совпавшие строки справа; если совпадения нет, поля правой таблицы будут NULL.",
       "keywords": [
@@ -2844,7 +2844,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o002",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Чем UNION отличается от UNION ALL?",
       "answer": "UNION объединяет результаты и удаляет дубликаты. UNION ALL объединяет результаты без удаления дубликатов, поэтому обычно быстрее.",
       "keywords": [
@@ -2856,7 +2856,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o003",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что вернёт сравнение NULL = NULL?",
       "answer": "В SQL NULL означает неизвестное значение. Сравнение NULL = NULL вернёт UNKNOWN/NULL, а не TRUE. Для проверки используют IS NULL.",
       "keywords": [
@@ -2868,7 +2868,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o004",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что такое первичный и внешний ключ?",
       "answer": "Первичный ключ уникально идентифицирует строку таблицы. Внешний ключ ссылается на ключ другой таблицы и помогает поддерживать ссылочную целостность.",
       "keywords": [
@@ -2879,7 +2879,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o005",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "question": "Что такое оконные функции?",
       "answer": "Оконные функции считают значение по набору связанных строк, но не схлопывают строки как GROUP BY. Пример: ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC).",
       "keywords": [
@@ -2890,7 +2890,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o006",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "В чём разница между списком и кортежем?",
       "answer": "Список изменяемый, кортеж неизменяемый. Кортеж может быть ключом словаря, если все его элементы хешируемые. Кортежи обычно используют для фиксированных наборов значений.",
       "keywords": [
@@ -2902,7 +2902,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o007",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое декоратор?",
       "answer": "Декоратор — это функция или объект, который принимает функцию и возвращает новую функцию с расширенным поведением. Применяется для логирования, проверки прав, кеширования, замера времени.",
       "keywords": [
@@ -2913,7 +2913,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o008",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое генератор и зачем он нужен?",
       "answer": "Генератор лениво выдаёт значения по одному с помощью yield. Он полезен для больших данных, потому что не хранит весь результат в памяти.",
       "keywords": [
@@ -2924,7 +2924,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o009",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое контекстный менеджер?",
       "answer": "Контекстный менеджер управляет входом и выходом из блока with. Например, open() закрывает файл даже при ошибке. Реализуется через __enter__ и __exit__.",
       "keywords": [
@@ -2936,7 +2936,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o010",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Как читать файл больше 7 ГБ?",
       "answer": "Нужно читать потоково: построчно или чанками, не используя read() всего файла. Для ускорения можно обрабатывать батчами, использовать генераторы, multiprocessing или внешние инструменты.",
       "keywords": [
@@ -2947,7 +2947,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o011",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что такое исключение?",
       "answer": "Исключение — ошибка выполнения, которую можно обработать через try/except. Важно ловить конкретные исключения, а не скрывать все ошибки без причины.",
       "keywords": [
@@ -2958,7 +2958,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o012",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое асимптотическая сложность?",
       "answer": "Это оценка роста времени или памяти алгоритма при увеличении размера входных данных. Например, линейный поиск O(n), бинарный поиск O(log n).",
       "keywords": [
@@ -2969,7 +2969,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o013",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Что такое рекурсия?",
       "answer": "Рекурсия — это когда функция вызывает саму себя. У неё должен быть базовый случай, иначе будет бесконечная рекурсия.",
       "keywords": [
@@ -2979,7 +2979,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o014",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Чем DFS отличается от BFS?",
       "answer": "DFS идёт в глубину и обычно использует стек/рекурсию. BFS идёт по слоям и использует очередь. BFS на невзвешенном графе находит кратчайшее число рёбер.",
       "keywords": [
@@ -2990,7 +2990,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o015",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "question": "Как работает алгоритм Дейкстры?",
       "answer": "Он поддерживает минимальные известные расстояния от стартовой вершины и на каждом шаге выбирает непосещённую вершину с минимальным расстоянием. Работает для неотрицательных весов.",
       "keywords": [
@@ -3001,7 +3001,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o016",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какие метрики качества ML-моделей ты знаешь?",
       "answer": "Для классификации: accuracy, precision, recall, F1, ROC-AUC. Для регрессии: MAE, MSE, RMSE, R2. Выбор зависит от задачи и цены ошибок.",
       "keywords": [
@@ -3013,7 +3013,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o017",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое регуляризация?",
       "answer": "Регуляризация добавляет штраф за сложность модели, чтобы уменьшить переобучение. Примеры: L1 и L2.",
       "keywords": [
@@ -3025,7 +3025,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o018",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какие этапы разработки ML-модели?",
       "answer": "Понимание задачи, сбор данных, EDA, очистка, feature engineering, train/validation/test split, обучение, подбор метрик, валидация, интерпретация, деплой и мониторинг.",
       "keywords": [
@@ -3037,7 +3037,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o019",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Чем классификация отличается от регрессии?",
       "answer": "Классификация предсказывает класс/категорию, регрессия предсказывает непрерывное число.",
       "keywords": [
@@ -3048,7 +3048,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o020",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Что такое переобучение и как бороться?",
       "answer": "Переобучение — модель запомнила обучающие данные и плохо работает на новых. Борьба: регуляризация, больше данных, кросс-валидация, ограничение сложности, dropout/early stopping.",
       "keywords": [
@@ -3059,7 +3059,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o021",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое большая языковая модель?",
       "answer": "LLM — модель, обученная на больших текстовых данных для понимания и генерации языка. Применяется для ответов на вопросы, суммаризации, классификации, RAG, извлечения данных.",
       "keywords": [
@@ -3070,7 +3070,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o022",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Каковы компоненты архитектуры LLM?",
       "answer": "Обычно это токенизатор, embeddings, блоки Transformer с attention, feed-forward слои, normalization и выходной слой для предсказания токенов.",
       "keywords": [
@@ -3082,7 +3082,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o023",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое RAG?",
       "answer": "RAG — подход, где перед генерацией выполняется поиск релевантных документов, а найденный контекст передаётся модели. Это снижает галлюцинации и позволяет отвечать по локальным данным.",
       "keywords": [
@@ -3093,7 +3093,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o024",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое embedding и векторная база?",
       "answer": "Embedding — числовой вектор смысла текста. Векторная база хранит такие векторы и ищет похожие документы по косинусному сходству или другим метрикам.",
       "keywords": [
@@ -3104,7 +3104,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o025",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Что такое NER и анализ тональности?",
       "answer": "NER извлекает именованные сущности: людей, организации, места. Анализ тональности определяет эмоциональную окраску текста: позитив, негатив, нейтрально.",
       "keywords": [
@@ -3115,7 +3115,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o026",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Для чего нужен HTML?",
       "answer": "HTML задаёт структуру веб-страницы: заголовки, абзацы, формы, ссылки, таблицы. Внешний вид задаёт CSS, поведение — JavaScript.",
       "keywords": [
@@ -3126,7 +3126,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o027",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое MVC?",
       "answer": "MVC разделяет приложение на Model — данные и бизнес-логика, View — представление, Controller — обработка запросов и управление сценарием.",
       "keywords": [
@@ -3138,7 +3138,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o028",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Как Django работает с БД?",
       "answer": "Django использует ORM: модели Python описывают таблицы, миграции изменяют схему, QuerySet формирует SQL-запросы.",
       "keywords": [
@@ -3149,7 +3149,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o029",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое REST?",
       "answer": "REST — подход к построению API вокруг ресурсов. Используются URL, HTTP-методы GET/POST/PUT/PATCH/DELETE и статусы ответа.",
       "keywords": [
@@ -3161,7 +3161,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o030",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "question": "Что такое CSRF и зачем защита?",
       "answer": "CSRF — атака, при которой браузер пользователя отправляет нежелательный запрос на сайт, где он авторизован. CSRF-токен подтверждает, что запрос отправлен с легитимной формы.",
       "keywords": [
@@ -3172,7 +3172,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o031",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое JVM/JDK/JRE?",
       "answer": "JVM исполняет байткод, JRE содержит JVM и библиотеки для запуска, JDK содержит JRE и инструменты разработки: javac, jar и др.",
       "keywords": [
@@ -3184,7 +3184,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o032",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое volatile?",
       "answer": "volatile гарантирует видимость изменений переменной между потоками и ограничивает переупорядочивание, но не делает составные операции атомарными.",
       "keywords": [
@@ -3195,7 +3195,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o033",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое CompletableFuture?",
       "answer": "CompletableFuture нужен для асинхронных вычислений и композиции результатов: thenApply, thenCompose, allOf, exceptionally.",
       "keywords": [
@@ -3206,7 +3206,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o034",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое LinkedHashMap и как сделать LRU?",
       "answer": "LinkedHashMap может хранить порядок доступа при accessOrder=true. Для LRU переопределяют removeEldestEntry, чтобы удалять старую запись при превышении capacity.",
       "keywords": [
@@ -3217,7 +3217,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o035",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "question": "Что такое @ControllerAdvice?",
       "answer": "@ControllerAdvice в Spring позволяет централизованно обрабатывать исключения контроллеров и возвращать единый формат ошибок.",
       "keywords": [
@@ -3228,7 +3228,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o036",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "question": "Какие базовые команды Linux нужны на экзамене?",
       "answer": "touch создаёт файл, rm удаляет, ls показывает каталог, cd меняет директорию, pwd показывает текущий путь, grep ищет по тексту.",
       "keywords": [
@@ -3240,7 +3240,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o037",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "question": "Что такое DNS, DHCP и HTTPS?",
       "answer": "DNS преобразует имя в IP, DHCP выдаёт сетевые настройки, HTTPS — HTTP поверх TLS для защищённого соединения.",
       "keywords": [
@@ -3252,7 +3252,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o038",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "question": "Что такое CAP-теорема?",
       "answer": "CAP говорит, что в распределённой системе при сетевом разделении приходится выбирать компромисс между consistency и availability, при этом partition tolerance фактически обязательна.",
       "keywords": [
@@ -3263,7 +3263,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o039",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "question": "Что такое Dockerfile и docker build?",
       "answer": "Dockerfile описывает инструкции сборки образа, docker build собирает image, а docker run запускает контейнер из image.",
       "keywords": [
@@ -3274,7 +3274,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o040",
-      "topic": "Git",
+      "topic": "WEB",
       "question": "Как отменять изменения в Git?",
       "answer": "Незакоммиченный файл можно вернуть через git restore. Проиндексированный файл убрать из индекса через git restore --staged. Коммит можно отменить revert или reset в зависимости от ситуации.",
       "keywords": [
@@ -3286,7 +3286,7 @@ window.GEC_DATA = {
     },
     {
       "id": "o041",
-      "topic": "Cloud и ITSM",
+      "topic": "WEB",
       "question": "Что такое SLA и инцидент в ITSM?",
       "answer": "SLA — соглашение об уровне сервиса. Инцидент — незапланированное прерывание или снижение качества сервиса, цель обработки — восстановить нормальную работу.",
       "keywords": [
@@ -3299,7 +3299,7 @@ window.GEC_DATA = {
   "practice": [
     {
       "id": "p001",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "title": "Алгоритм Дейкстры",
       "task": "Реализуйте алгоритм Дейкстры для графа с неотрицательными весами. На вход: граф в виде словаря смежности и стартовая вершина. На выход: словарь минимальных расстояний.",
       "expected": "Ожидается priority queue/heapq, distances, обработка недостижимых вершин. Сложность примерно O((V+E) log V).",
@@ -3307,7 +3307,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p002",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "title": "Минимальное число, оканчивающееся на 3",
       "task": "Напишите программу, которая в последовательности натуральных чисел определяет минимальное число, оканчивающееся на 3. Если таких чисел нет — вывести сообщение.",
       "expected": "Проверка n % 10 == 3, поддержка пустого результата.",
@@ -3315,7 +3315,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p003",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "title": "n-е число Фибоначчи",
       "task": "Напишите функцию fibonacci(n: int) -> int. Условия: fibonacci(0)=0, fibonacci(1)=1, fibonacci(6)=8. Объясните сложность.",
       "expected": "Лучше итеративно O(n) по времени и O(1) по памяти.",
@@ -3323,7 +3323,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p004",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "title": "Проверка скобочной последовательности",
       "task": "Напишите функцию is_valid_brackets(s: str) -> bool для скобок (), [], {}. Скобки должны быть правильно вложены.",
       "expected": "Ожидается стек и словарь пар скобок. Сложность O(n).",
@@ -3331,7 +3331,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p005",
-      "topic": "Алгоритмы и структуры данных",
+      "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
       "title": "Очередь через два стека",
       "task": "Реализуйте очередь с методами push, pop, peek через два стека. Амортизированная сложность операций должна быть O(1).",
       "expected": "Ожидается in_stack/out_stack, переливание только при пустом out_stack.",
@@ -3339,7 +3339,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p006",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "title": "Имена на букву A",
       "task": "Есть таблица users(id, name, email). Напишите SQL-запрос, который выводит имена пользователей, начинающиеся на букву A.",
       "expected": "SELECT name FROM users WHERE name LIKE 'A%'; Можно упомянуть ILIKE для PostgreSQL без учёта регистра.",
@@ -3347,7 +3347,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p007",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "title": "Последняя пара вопрос-ответ по пользователю",
       "task": "Есть таблица messages(id, user_id, role, text, created_at, pair_id). Нужно вывести user_id и последнюю пару вопрос-ответ по каждому пользователю, где есть текстовый ответ ассистента.",
       "expected": "Ожидается оконная функция ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC) или DISTINCT ON в PostgreSQL. Нужно фильтровать assistant text IS NOT NULL.",
@@ -3355,7 +3355,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p008",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "title": "Разобрать SQL-скрипт",
       "task": "Дан произвольный SQL-скрипт. Объясните, какие таблицы создаются/изменяются, какие данные выбираются, где фильтрация, группировка, сортировка, JOIN и транзакции.",
       "expected": "Ожидается структурированное объяснение: DDL/DML/DQL, входные таблицы, условия, результат.",
@@ -3363,7 +3363,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p009",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "title": "Количество строк после JOIN",
       "task": "table1: (1,A), (2,B), (2,B), (3,C). table2: (1,a), (2,b), (3,c). Сколько строк вернёт INNER JOIN по id и почему?",
       "expected": "Ответ: 4 строки, потому что id=2 в table1 встречается дважды и обе строки соединятся с одной строкой table2.",
@@ -3371,7 +3371,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p010",
-      "topic": "SQL и базы данных",
+      "topic": "SQL",
       "title": "Оконная функция ROW_NUMBER",
       "task": "Напишите запрос, который для каждой категории товаров выводит самый дорогой товар.",
       "expected": "Ожидается ROW_NUMBER() OVER (PARTITION BY category_id ORDER BY price DESC) = 1.",
@@ -3379,7 +3379,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p011",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "title": "RAG API-сервис по XML Wiki",
       "task": "Разработайте API-сервис, который при запуске читает XML-файлы из ./source_data/, векторизует данные, сохраняет в векторную БД и обрабатывает GET /llm?query=... Ответ должен быть JSON {\"answer\": \"...\"}. Ошибки логировать в ./logs/log-дата.txt.",
       "expected": "Ожидается FastAPI/Flask, XML parser, chunking, embeddings, vector DB/faiss/chroma, retriever, prompt, LLM client, обработка ошибок, README.",
@@ -3387,7 +3387,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p012",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "title": "Анализ тональности и NER",
       "task": "Прочитайте текстовый файл, выполните анализ тональности и извлечение именованных сущностей. Сформируйте автоматический отчёт с таблицами и графиками.",
       "expected": "Ожидается чтение файла, NLP pipeline, таблицы сущностей, распределение тональности, графики, сохранение отчёта.",
@@ -3395,7 +3395,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p013",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "title": "Прогноз реакций на публикацию",
       "task": "Прочитайте текстовый файл с публикациями и признаками. Напишите программу, прогнозирующую количество реакций на текст публикации.",
       "expected": "Ожидается регрессионная постановка, признаки текста, train/test split, метрики MAE/RMSE, базовая модель.",
@@ -3403,7 +3403,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p014",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "title": "Векторизация текста разными методами",
       "task": "Прочитайте текстовый файл и выполните векторизацию разными методами: bag-of-words/TF-IDF, word2vec/Skip-Gram, предобученные embeddings. Сравните результаты.",
       "expected": "Ожидается несколько методов, примеры похожести/кластеризации, выводы.",
@@ -3411,7 +3411,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p015",
-      "topic": "NLP, LLM и текстовый поиск",
+      "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "title": "Диалоговая система на контексте файла",
       "task": "Используйте текстовый файл как контекст для диалоговой системы. Сравните ответы нескольких LLM на одинаковые вопросы и сделайте вывод об области применения.",
       "expected": "Ожидается список вопросов, ответы моделей, сравнение качества, ограничения.",
@@ -3419,7 +3419,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p016",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Большой файл >7 ГБ",
       "task": "Нужно прочитать текстовый файл размером более 7 ГБ и сформировать единый массив данных. Время работы не должно превышать 3 минуты. Опишите и реализуйте подход.",
       "expected": "Важно не читать весь файл сразу. Ожидается потоковая обработка, генераторы/чанки, возможно mmap/multiprocessing, ограничения памяти.",
@@ -3427,7 +3427,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p017",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Пересечение двух массивов",
       "task": "Напишите функцию, которая вернёт пересечение двух массивов X и Y. Пример: X=[1,5,9,0], Y=[3,0,2,9] -> [9,0] или множество {0,9}. Учитывайте разные типы данных.",
       "expected": "Ожидается решение через set для хешируемых элементов или безопасная обработка нехешируемых.",
@@ -3435,7 +3435,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p018",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Удаление текста в скобках",
       "task": "Напишите функцию remove_parentheses(text: str) -> str, которая удаляет всё внутри круглых скобок и сами скобки. Скобки могут быть вложенными.",
       "expected": "Ожидается счётчик depth или стек. Сложность O(n).",
@@ -3443,7 +3443,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p019",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Сумма квадратов двузначных чисел, делящихся на 77",
       "task": "Дан список numbers. Используя filter(), map() и sum(), вычислите сумму квадратов двузначных чисел, которые делятся на 77 без остатка. Учитывайте отрицательные двузначные числа.",
       "expected": "Двузначные: abs(n) между 10 и 99. Делимость проверять на исходном числе n % 77 == 0.",
@@ -3451,7 +3451,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p020",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Электронные часы",
       "task": "С начала суток прошло n секунд. Выведите время в формате h:mm:ss, где минуты и секунды всегда двузначные.",
       "expected": "Ожидается n % 86400, h = n // 3600, m = ..., s = ..., формат f\"{h}:{m:02d}:{s:02d}\".",
@@ -3459,7 +3459,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p021",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Класс Train",
       "task": "Определите класс Train с атрибутами type и speed. Создайте экземпляр и верните speed.",
       "expected": "Ожидается __init__(self, type, speed), объект train = Train(...), print(train.speed).",
@@ -3467,7 +3467,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p022",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "List comprehension",
       "task": "Преобразуйте цикл в list comprehension: a=[1,2,3,4,5]; a2=[]; for i in a: a2.append(i+1).",
       "expected": "Ответ: a2 = [i + 1 for i in a].",
@@ -3475,7 +3475,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p023",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "Дата во фрейме данных",
       "task": "Дан DataFrame с Date и event. Пользователь вводит дату 2021-01-18. Нужно проверить наличие даты и вывести событие. Если даты нет — вывести ближайшую дату.",
       "expected": "Ожидается pandas, pd.to_datetime, фильтр, если пусто — поиск min(abs(df.Date - target)).",
@@ -3483,7 +3483,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p024",
-      "topic": "Python",
+      "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "title": "JSON пары ключ-значение",
       "task": "Программа принимает на вход JSON-объект из stdin и выводит все пары ключ-значение в исходном порядке. Если значение — список, элементы вывести через запятую.",
       "expected": "Ожидается json.load(sys.stdin), обход items(), обработка list.",
@@ -3491,7 +3491,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p025",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "title": "EDA и Feature Engineering",
       "task": "Считайте CSV-файл, проведите EDA. Результаты: DataFrame и текстовое описание, не менее 3 графиков, логичных для данных.",
       "expected": "Ожидается info/describe, пропуски, дубликаты, распределения, корреляции, графики, новые признаки.",
@@ -3499,7 +3499,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p026",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "title": "Кластеризация k-means и DBSCAN",
       "task": "Считайте CSV. Выполните кластеризацию k-means с выбором k методом elbow и DBSCAN. Используйте не менее 5 переменных. Постройте parallel coordinates и 2D/3D визуализации.",
       "expected": "Ожидается масштабирование признаков, elbow, подбор eps/min_samples, визуализации, интерпретация кластеров.",
@@ -3507,7 +3507,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p027",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "title": "Anomaly Detection",
       "task": "Прочитайте файл и проведите анализ аномалий. Обоснуйте инструмент, оцените возможность использовать весь объём данных для ML, при необходимости разделите выборки.",
       "expected": "Ожидается IsolationForest/LOF/statistics, визуализация выбросов, выводы.",
@@ -3515,7 +3515,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p028",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "title": "Классификация AutoML + своя модель",
       "task": "Постройте базовую модель классификации через AutoML, выберите метрику, постройте Confusion Matrix и ROC-Curve. Затем постройте свою модель на дереве/лесе/бустинге/логистической регрессии и сравните.",
       "expected": "Ожидается train/test split, метрика F1/AUC/Accuracy по задаче, графики и вывод.",
@@ -3523,7 +3523,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p029",
-      "topic": "Машинное обучение и Data Science",
+      "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "title": "Регрессия AutoML + своя модель",
       "task": "Постройте базовую регрессионную модель через AutoML, выберите MAE/MSE/RMSE, постройте график real vs predicted. Затем построить свою модель и сравнить.",
       "expected": "Ожидается корректная постановка regression, метрики, scatter plot real/pred, вывод.",
@@ -3531,7 +3531,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p030",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "title": "JS цепочка (2).plus(3).minus(1)",
       "task": "Реализуйте методы, чтобы выражение (2).plus(3).minus(1) возвращало 4.",
       "expected": "Ожидается Number.prototype.plus/minus или безопасная альтернатива. Объяснить риски изменения prototype.",
@@ -3539,7 +3539,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p031",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "title": "Верстка макета с фиксированным меню",
       "task": "Сверстайте макет: шапка с изображением по центру, контент 1-1000 строк, правое меню 1-10 пунктов с подменю, меню фиксировано при прокрутке до расстояния 50px от футера.",
       "expected": "Ожидается HTML/CSS/JS, position sticky/fixed, адаптивность, обработка высоты меню и футера.",
@@ -3547,7 +3547,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p032",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "title": "CRUD-таблица с backend",
       "task": "Создайте компонент таблицы с фейковыми JSON-данными. Получить данные с backend, вывести таблицу. Реализовать добавление, удаление, редактирование с кнопкой сохранить.",
       "expected": "Ожидается GET/POST/PUT/DELETE, состояние UI, readonly/edit mode, обработка ошибок.",
@@ -3555,7 +3555,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p033",
-      "topic": "Web, HTML/CSS/JS и Django",
+      "topic": "WEB",
       "title": "Мини Django CRUD",
       "task": "Создайте Django-приложение с моделью Book(title, author, year), страницей списка, добавлением и удалением книги.",
       "expected": "Ожидается model, migration, view, url, template, form, csrf.",
@@ -3563,7 +3563,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p034",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "title": "CompletableFuture сумма квадратов",
       "task": "Напишите Java-программу: сгенерировать 1 000 000 случайных int, разбить на 4 части, каждую обработать в отдельном потоке, каждый поток считает сумму квадратов. Использовать CompletableFuture и вывести общую сумму и время.",
       "expected": "Ожидается ExecutorService/ForkJoinPool, CompletableFuture.supplyAsync, allOf/join, обработка ошибок, shutdown.",
@@ -3571,7 +3571,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p035",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "title": "LRU Cache",
       "task": "Реализуйте LRUCache<K,V> с get и put за O(1), удалением наименее используемого элемента при превышении capacity. Сделайте потокобезопасную ConcurrentLRUCache и JUnit 5 тесты.",
       "expected": "Ожидается LinkedHashMap accessOrder=true + removeEldestEntry или структура HashMap + linked list. Для потокобезопасности synchronized/ReentrantLock.",
@@ -3579,7 +3579,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p036",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "title": "REST-сервис библиотеки книг",
       "task": "Создайте Spring REST-сервис для книг: POST /books, GET /books с фильтрами author/genre, GET /books/{id}, PUT /books/{id}, DELETE /books/{id}. Хранение в ConcurrentHashMap, DTO, валидация, ControllerAdvice.",
       "expected": "Ожидается Controller, Service, DTO, validation annotations, exception handler.",
@@ -3587,7 +3587,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p037",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "title": "Парсинг server.log",
       "task": "Дан server.log. Считать Files.lines(), через Stream API и regex извлечь ERROR, сгруппировать по сервису, подсчитать ошибки, найти топ-3 сообщений без параметров. Вывести отсортировано по убыванию.",
       "expected": "Ожидается Pattern/Matcher, groupingBy/counting, сортировка, try-with-resources, IOException handling.",
@@ -3595,7 +3595,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p038",
-      "topic": "Java и Spring",
+      "topic": "JAVA",
       "title": "equals/hashCode",
       "task": "Создайте класс User(id, email), переопределите equals и hashCode так, чтобы пользователи сравнивались по id. Напишите пример работы с HashSet.",
       "expected": "Ожидается корректный контракт equals/hashCode и демонстрация удаления дубликатов.",
@@ -3603,7 +3603,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p039",
-      "topic": "ОС и Linux",
+      "topic": "WEB",
       "title": "Разбор логов Linux",
       "task": "Напишите набор команд Linux, чтобы найти в app.log все строки ERROR за сегодня, посчитать их количество и вывести топ-10 сервисов по числу ошибок.",
       "expected": "Ожидается grep/awk/sort/uniq/head или аналог.",
@@ -3611,7 +3611,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p040",
-      "topic": "Сети и HTTP",
+      "topic": "WEB",
       "title": "Диагностика недоступного сайта",
       "task": "Опишите порядок диагностики: домен не открывается в браузере. Какие команды используете и что проверяете?",
       "expected": "Ожидается ping/dig/nslookup/curl/traceroute, DNS, порт, TLS, HTTP status, firewall.",
@@ -3619,7 +3619,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p041",
-      "topic": "Docker, Kubernetes и инфраструктура",
+      "topic": "WEB",
       "title": "Docker Compose для web + db",
       "task": "Напишите docker-compose.yml для локального web-приложения и PostgreSQL. Добавьте env, volumes, ports и healthcheck.",
       "expected": "Ожидается services web/db, postgres volume, depends_on/healthcheck, .env.",
@@ -3627,7 +3627,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p042",
-      "topic": "Git",
+      "topic": "WEB",
       "title": "Исправление ошибочного коммита",
       "task": "Вы случайно закоммитили лишний файл. Покажите варианты исправления, если коммит ещё не отправлен и если уже отправлен в общий репозиторий.",
       "expected": "Ожидается reset/amend для локального, revert или новый коммит для опубликованного.",
@@ -3635,7 +3635,7 @@ window.GEC_DATA = {
     },
     {
       "id": "p043",
-      "topic": "Архитектура, микросервисы и C4",
+      "topic": "WEB",
       "title": "Спроектировать API для сервиса вопросов",
       "task": "Спроектируйте API для банка вопросов ГЭК: темы, тесты, устные, практические задания, генерация билета. Опишите ресурсы и методы.",
       "expected": "Ожидается REST endpoints, модели данных, фильтры по topic/difficulty, генерация билета.",
@@ -3649,7 +3649,7 @@ window.GEC_DATA.meta.version = "1.1.0";
 window.GEC_DATA.tests.push(
   {
     "id": "t202",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Что произойдёт, если поток вызовет wait() у объекта, монитор которого он захватил, но notify()/notifyAll() никогда не будет вызван?",
     "options": [
       "Поток освободит монитор и останется ждать до interruption/timeout или уведомления",
@@ -3663,7 +3663,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t203",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какая реализация Map сохраняет порядок вставки элементов?",
     "options": [
       "HashMap",
@@ -3677,7 +3677,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t204",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какой Stream API pipeline корректно собирает ненулевые элементы в List?",
     "options": [
       "stream.filter(Objects::nonNull).collect(Collectors.toList())",
@@ -3691,7 +3691,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t205",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какое утверждение о volatile в Java верно?",
     "options": [
       "volatile делает compound-операции вроде count++ атомарными",
@@ -3705,7 +3705,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t206",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Что из перечисленного НЕ является областью памяти JVM?",
     "options": [
       "Heap",
@@ -3719,7 +3719,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t207",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Нужна ли @Autowired на единственном конструкторе Spring-компонента в современных версиях Spring?",
     "options": [
       "Да, без неё бин никогда не создастся",
@@ -3733,7 +3733,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t208",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Что из перечисленного является функциональным интерфейсом?",
     "options": [
       "Runnable",
@@ -3747,7 +3747,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t209",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Что создаёт Executors.newFixedThreadPool(10)?",
     "options": [
       "Пул с максимум 10 рабочими потоками и неограниченной очередью задач",
@@ -3761,7 +3761,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t210",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Что такое false sharing в многопоточных приложениях?",
     "options": [
       "Ситуация, когда потоки меняют разные переменные в одной cache line и мешают кешированию друг друга",
@@ -3775,7 +3775,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t211",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какая аннотация Spring Boot обычно включает auto-configuration, component scan и configuration?",
     "options": [
       "@SpringBootApplication",
@@ -3789,7 +3789,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t212",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какой паттерн позволяет менять поведение объекта во время выполнения за счёт замены алгоритма?",
     "options": [
       "Strategy",
@@ -3803,7 +3803,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t213",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какая стратегия генерации идентификаторов JPA хранит следующее значение в отдельной таблице?",
     "options": [
       "GenerationType.IDENTITY",
@@ -3817,7 +3817,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t214",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какая аннотация JUnit 5 выполняет метод перед каждым тестом?",
     "options": [
       "@BeforeEach",
@@ -3831,7 +3831,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t215",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Какое утверждение о микросервисной архитектуре неверно?",
     "options": [
       "Сервисы могут разворачиваться независимо",
@@ -3845,7 +3845,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t216",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "question": "Почему индекс по колонке может не использоваться при условии WHERE lower(email) = 'a@b.ru'?",
     "options": [
       "Потому что функция над колонкой меняет выражение поиска, если нет функционального индекса",
@@ -3859,7 +3859,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t217",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "question": "Какой уровень изоляции PostgreSQL предотвращает dirty read, non-repeatable read и phantom read за счёт сериализуемого порядка транзакций?",
     "options": [
       "Read Uncommitted",
@@ -3873,7 +3873,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t218",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "question": "Что обычно означает N+1 проблема в ORM?",
     "options": [
       "Один запрос за списком и отдельный запрос за связанными данными для каждой строки",
@@ -3887,7 +3887,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t219",
-    "topic": "Python",
+    "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
     "question": "Почему изменяемый объект как значение аргумента по умолчанию может быть опасен?",
     "options": [
       "Он создаётся один раз при определении функции и переиспользуется между вызовами",
@@ -3901,7 +3901,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t220",
-    "topic": "Python",
+    "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
     "question": "Что делает descriptor protocol в Python?",
     "options": [
       "Позволяет объекту управлять доступом к атрибуту через __get__, __set__ и __delete__",
@@ -3915,7 +3915,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t221",
-    "topic": "Python",
+    "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
     "question": "Почему GIL не гарантирует потокобезопасность операций над бизнес-состоянием?",
     "options": [
       "GIL защищает выполнение байткода, но составные операции всё равно могут перемежаться между потоками",
@@ -3929,7 +3929,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t222",
-    "topic": "Алгоритмы и структуры данных",
+    "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
     "question": "Какова асимптотика поиска в хеш-таблице при большом числе коллизий в одной корзине без балансировки?",
     "options": [
       "O(1) всегда",
@@ -3943,7 +3943,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t223",
-    "topic": "Алгоритмы и структуры данных",
+    "topic": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
     "question": "Почему quicksort имеет худший случай O(n^2)?",
     "options": [
       "Если pivot постоянно делит массив крайне неравномерно",
@@ -3957,7 +3957,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t224",
-    "topic": "NLP, LLM и текстовый поиск",
+    "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
     "question": "Почему в RAG-системе опасно оценивать качество только по cosine similarity найденных документов?",
     "options": [
       "Similarity не гарантирует фактическую полезность ответа и не проверяет groundedness генерации",
@@ -3971,7 +3971,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t225",
-    "topic": "NLP, LLM и текстовый поиск",
+    "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
     "question": "Зачем при гибридном поиске объединяют BM25 и vector search?",
     "options": [
       "Чтобы совместить точные лексические совпадения и семантическую близость",
@@ -3985,7 +3985,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t226",
-    "topic": "Машинное обучение и Data Science",
+    "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
     "question": "Почему leakage через признак, появляющийся после целевого события, делает модель непригодной?",
     "options": [
       "Модель видит информацию из будущего и показывает завышенное качество на валидации",
@@ -3999,7 +3999,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t227",
-    "topic": "Машинное обучение и Data Science",
+    "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
     "question": "Когда stratified split особенно важен?",
     "options": [
       "При классификации с дисбалансом классов",
@@ -4013,7 +4013,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t228",
-    "topic": "Web, HTML/CSS/JS и Django",
+    "topic": "WEB",
     "question": "Почему innerHTML с пользовательским вводом опасен?",
     "options": [
       "Он может выполнить внедрённый HTML/скрипт и привести к XSS",
@@ -4027,7 +4027,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t229",
-    "topic": "Web, HTML/CSS/JS и Django",
+    "topic": "WEB",
     "question": "Для чего в Django используют select_related?",
     "options": [
       "Чтобы загрузить связанные ForeignKey/OneToOne объекты одним SQL JOIN",
@@ -4041,7 +4041,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t230",
-    "topic": "ОС и Linux",
+    "topic": "WEB",
     "question": "Что показывает код завершения процесса 0 в Unix/Linux?",
     "options": [
       "Успешное завершение",
@@ -4055,7 +4055,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t231",
-    "topic": "ОС и Linux",
+    "topic": "WEB",
     "question": "Почему команда chmod 777 для веб-каталога обычно плохая идея?",
     "options": [
       "Она даёт запись всем пользователям и увеличивает риск компрометации",
@@ -4069,7 +4069,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t232",
-    "topic": "Сети и HTTP",
+    "topic": "WEB",
     "question": "Почему PUT считается идемпотентным, а POST обычно нет?",
     "options": [
       "Повтор одного и того же PUT приводит ресурс к тому же состоянию, POST часто создаёт новое действие/ресурс",
@@ -4083,7 +4083,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t233",
-    "topic": "Сети и HTTP",
+    "topic": "WEB",
     "question": "Что проверяет SNI при TLS-подключении к виртуальному хосту?",
     "options": [
       "Имя хоста, которое клиент передаёт серверу до выбора сертификата",
@@ -4097,7 +4097,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t234",
-    "topic": "Архитектура, микросервисы и C4",
+    "topic": "WEB",
     "question": "Какой риск появляется при синхронной цепочке service A -> B -> C -> D?",
     "options": [
       "Рост задержки и каскадные отказы при проблеме в глубине цепочки",
@@ -4111,7 +4111,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t235",
-    "topic": "Архитектура, микросервисы и C4",
+    "topic": "WEB",
     "question": "Что показывает уровень Container в модели C4?",
     "options": [
       "Основные приложения/сервисы/хранилища внутри системы и их взаимодействия",
@@ -4125,7 +4125,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t236",
-    "topic": "Docker, Kubernetes и инфраструктура",
+    "topic": "WEB",
     "question": "Почему контейнер без healthcheck может считаться running, хотя приложение внутри не готово?",
     "options": [
       "Docker видит только состояние процесса, а не прикладную готовность сервиса",
@@ -4139,7 +4139,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t237",
-    "topic": "Docker, Kubernetes и инфраструктура",
+    "topic": "WEB",
     "question": "Зачем в Kubernetes разделяют readinessProbe и livenessProbe?",
     "options": [
       "Readiness управляет получением трафика, liveness - перезапуском зависшего контейнера",
@@ -4153,7 +4153,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t238",
-    "topic": "Git",
+    "topic": "WEB",
     "question": "Почему force push в общую ветку опасен?",
     "options": [
       "Он переписывает удалённую историю и может сломать работу других участников",
@@ -4167,7 +4167,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t239",
-    "topic": "Git",
+    "topic": "WEB",
     "question": "Когда git revert предпочтительнее git reset для уже опубликованного коммита?",
     "options": [
       "Когда нужно отменить изменения без переписывания общей истории",
@@ -4181,7 +4181,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t240",
-    "topic": "Cloud и ITSM",
+    "topic": "WEB",
     "question": "Чем SLO отличается от SLA?",
     "options": [
       "SLO - внутренний целевой показатель качества, SLA - договорённость с пользователем/клиентом с последствиями",
@@ -4195,7 +4195,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t241",
-    "topic": "Cloud и ITSM",
+    "topic": "WEB",
     "question": "Что такое error budget в SRE-подходе?",
     "options": [
       "Допустимый объём недоступности/ошибок относительно SLO",
@@ -4209,7 +4209,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t242",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "question": "Почему foreign key без индекса на дочерней таблице может замедлять DELETE из родительской таблицы?",
     "options": [
       "СУБД должна проверять ссылки в дочерней таблице, и без индекса это может стать полным сканированием",
@@ -4223,7 +4223,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t243",
-    "topic": "Машинное обучение и Data Science",
+    "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
     "question": "Почему accuracy может вводить в заблуждение при сильном дисбалансе классов?",
     "options": [
       "Модель может всегда предсказывать большинство и получить высокий accuracy при плохом recall меньшинства",
@@ -4237,7 +4237,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t244",
-    "topic": "Web, HTML/CSS/JS и Django",
+    "topic": "WEB",
     "question": "Почему CSRF-защита важна для cookie-based аутентификации?",
     "options": [
       "Браузер автоматически прикладывает cookie к запросу на домен, и злоумышленник может инициировать действие со сторонней страницы",
@@ -4251,7 +4251,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t245",
-    "topic": "Docker, Kubernetes и инфраструктура",
+    "topic": "WEB",
     "question": "Почему secrets не стоит передавать в Docker image через ARG?",
     "options": [
       "ARG может попасть в историю слоёв/metadata образа и утечь при публикации",
@@ -4265,7 +4265,7 @@ window.GEC_DATA.tests.push(
   },
   {
     "id": "t246",
-    "topic": "Сети и HTTP",
+    "topic": "WEB",
     "question": "Что может означать успешный ping при недоступности сайта по HTTPS?",
     "options": [
       "ICMP до хоста проходит, но TCP 443, TLS, HTTP-сервис или firewall могут быть проблемой",
@@ -4282,7 +4282,7 @@ window.GEC_DATA.tests.push(
 window.GEC_DATA.oral.push(
   {
     "id": "o042",
-    "topic": "Java и Spring",
+    "topic": "JAVA",
     "question": "Объясните разницу между visibility, atomicity и ordering в Java Memory Model на примере volatile и synchronized.",
     "answer": "Visibility означает, что поток видит изменения другого потока. Atomicity означает неделимость операции. Ordering ограничивает переупорядочивание. volatile даёт visibility и ordering для одной переменной, но не атомарность составных операций; synchronized даёт взаимное исключение и happens-before при входе/выходе из монитора.",
     "keywords": ["JMM", "volatile", "synchronized", "happens-before"],
@@ -4290,7 +4290,7 @@ window.GEC_DATA.oral.push(
   },
   {
     "id": "o043",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "question": "Как диагностировать медленный SQL-запрос и какие выводы можно сделать из EXPLAIN ANALYZE?",
     "answer": "Нужно смотреть план выполнения, фактическое и ожидаемое число строк, типы join, seq/index scan, сортировки, использование временных файлов, время узлов плана. Затем проверить индексы, статистику, селективность условий, N+1 и необходимость переписать запрос.",
     "keywords": ["EXPLAIN ANALYZE", "index scan", "seq scan", "statistics"],
@@ -4298,7 +4298,7 @@ window.GEC_DATA.oral.push(
   },
   {
     "id": "o044",
-    "topic": "NLP, LLM и текстовый поиск",
+    "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
     "question": "Какие ошибки бывают в RAG-пайплайне и как отделить проблему retrieval от проблемы генерации?",
     "answer": "Retrieval-проблемы видны, когда нужный документ не попал в top-k или ранжируется низко. Generation-проблемы появляются, когда контекст релевантный, но ответ искажает факты. Проверяют recall@k/MRR, ручные golden-наборы, reranking, цитирование источников и метрики groundedness.",
     "keywords": ["RAG", "retrieval", "reranking", "groundedness"],
@@ -4306,7 +4306,7 @@ window.GEC_DATA.oral.push(
   },
   {
     "id": "o045",
-    "topic": "Docker, Kubernetes и инфраструктура",
+    "topic": "WEB",
     "question": "Чем отличаются readinessProbe и livenessProbe и почему неверная настройка может ухудшить доступность?",
     "answer": "ReadinessProbe отвечает, можно ли отправлять pod трафик. LivenessProbe отвечает, нужно ли перезапустить контейнер. Если liveness проверяет внешнюю зависимость или слишком агрессивна, сервис может уйти в цикл рестартов; если readiness слаба, трафик попадёт в неготовый pod.",
     "keywords": ["readinessProbe", "livenessProbe", "availability"],
@@ -4317,7 +4317,7 @@ window.GEC_DATA.oral.push(
 window.GEC_DATA.practice.push(
   {
     "id": "p044",
-    "topic": "NLP, LLM и текстовый поиск",
+    "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
     "title": "Оценка RAG на golden-наборе",
     "task": "Спроектируйте мини-пайплайн оценки RAG: есть 50 вопросов, ожидаемые источники и эталонные ответы. Опишите метрики retrieval и генерации, формат отчёта и действия при плохом recall@5.",
     "expected": "Ожидается разделение retrieval/generation, recall@k/MRR, проверка groundedness, анализ ошибок chunking/embedding/rerank и план улучшений.",
@@ -4325,7 +4325,7 @@ window.GEC_DATA.practice.push(
   },
   {
     "id": "p045",
-    "topic": "SQL и базы данных",
+    "topic": "SQL",
     "title": "Оптимизация отчётного SQL-запроса",
     "task": "Дан медленный отчёт по заказам за месяц с join users/orders/payments. Опишите, как снять EXPLAIN ANALYZE, какие индексы проверить и как убедиться, что оптимизация не меняет результат.",
     "expected": "Ожидается план диагностики, индексы на FK/date/status, сравнение результатов до/после, проверка NULL/дубликатов и регрессионный SQL-кейс.",
@@ -4333,7 +4333,7 @@ window.GEC_DATA.practice.push(
   },
   {
     "id": "p046",
-    "topic": "Docker, Kubernetes и инфраструктура",
+    "topic": "WEB",
     "title": "Compose-деплой статического сайта",
     "task": "Сделайте Dockerfile и docker-compose.yml для статического сайта на nginx. Добавьте порт из env, restart policy и healthcheck. Опишите команды деплоя и rollback.",
     "expected": "Ожидается nginx image, COPY статических файлов, SITE_PORT, docker compose up -d --build, healthcheck и понятный rollback через предыдущую версию.",
@@ -4341,7 +4341,7 @@ window.GEC_DATA.practice.push(
   },
   {
     "id": "p047",
-    "topic": "Web, HTML/CSS/JS и Django",
+    "topic": "WEB",
     "title": "Защита формы от XSS и CSRF",
     "task": "Есть форма комментариев с cookie-based логином. Опишите и реализуйте меры против stored XSS и CSRF, включая серверную и клиентскую часть.",
     "expected": "Ожидается экранирование/санитизация вывода, запрет опасного HTML, CSRF token, SameSite cookie, проверки negative cases.",
@@ -4801,20 +4801,6 @@ Object.entries(balancedAnswerOptions).forEach(([id, options]) => {
   if (item) item.options = options;
 });
 
-window.GEC_DATA.tests.forEach((item, index) => {
-  const targetAnswerIndex = index % item.options.length;
-  if (item.answer === targetAnswerIndex) return;
-
-  const correctOption = item.options[item.answer];
-  const distractors = item.options.filter((_, optionIndex) => optionIndex !== item.answer);
-  item.options = [
-    ...distractors.slice(0, targetAnswerIndex),
-    correctOption,
-    ...distractors.slice(targetAnswerIndex)
-  ];
-  item.answer = targetAnswerIndex;
-});
-
 const targetTopics = [
   "ПРОГРАММИРОВАНИЕ НА PYTHON",
   "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
@@ -4824,28 +4810,6 @@ const targetTopics = [
   "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
   "JAVA"
 ];
-
-const topicAliases = {
-  "Python": "ПРОГРАММИРОВАНИЕ НА PYTHON",
-  "Машинное обучение и Data Science": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
-  "Алгоритмы и структуры данных": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
-  "SQL и базы данных": "SQL",
-  "Web, HTML/CSS/JS и Django": "WEB",
-  "NLP, LLM и текстовый поиск": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
-  "Java и Spring": "JAVA",
-  "ОС и Linux": "WEB",
-  "Сети и HTTP": "WEB",
-  "Архитектура, микросервисы и C4": "WEB",
-  "Docker, Kubernetes и инфраструктура": "WEB",
-  "Git": "WEB",
-  "Cloud и ITSM": "WEB"
-};
-
-function normalizeTopics(collection) {
-  collection.forEach(item => {
-    item.topic = topicAliases[item.topic] ?? item.topic;
-  });
-}
 
 function rebalanceAnswerPositions(items) {
   items.forEach((item, index) => {
@@ -4864,7 +4828,4 @@ function rebalanceAnswerPositions(items) {
 }
 
 window.GEC_DATA.topics = targetTopics;
-normalizeTopics(window.GEC_DATA.tests);
-normalizeTopics(window.GEC_DATA.oral);
-normalizeTopics(window.GEC_DATA.practice);
 rebalanceAnswerPositions(window.GEC_DATA.tests);
