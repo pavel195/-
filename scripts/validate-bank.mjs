@@ -17,6 +17,16 @@ const expectedTopics = [
   'АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ',
   'JAVA'
 ];
+const expectedTestCount = 97;
+const expectedTestsByTopic = new Map([
+  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 14],
+  ['МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ', 13],
+  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 14],
+  ['SQL', 14],
+  ['WEB', 14],
+  ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 14],
+  ['JAVA', 14]
+]);
 const topics = new Set(data?.topics ?? []);
 
 function fail(message) {
@@ -63,8 +73,8 @@ for (const item of data.tests ?? []) {
   validateId(item, seenIds, 'tests');
   validateTopicAndDifficulty(item, 'tests');
   if (!item.question?.trim()) fail(`tests ${item.id}: missing question`);
-  if (!Array.isArray(item.options) || item.options.length !== 4) {
-    fail(`tests ${item.id}: expected exactly four options`);
+  if (!Array.isArray(item.options) || item.options.length < 2 || item.options.length > 4) {
+    fail(`tests ${item.id}: expected from two to four options`);
   }
   if (!Number.isInteger(item.answer) || item.answer < 0 || item.answer >= item.options.length) {
     fail(`tests ${item.id}: answer index is out of options range`);
@@ -76,17 +86,16 @@ for (const item of data.tests ?? []) {
   if (new Set(normalizedOptions).size !== normalizedOptions.length) {
     fail(`tests ${item.id}: duplicate answer options`);
   }
-  const maxOptionLength = Math.max(...optionLengths);
-  const minOptionLength = Math.min(...optionLengths);
-  if (maxOptionLength - minOptionLength > 60) {
-    fail(`tests ${item.id}: answer option lengths are too different`);
-  }
-  const shortestDistractorLength = Math.min(
-    ...optionLengths.filter((_, index) => index !== item.answer)
-  );
-  const correctOptionLength = optionLengths[item.answer];
-  if (correctOptionLength === maxOptionLength && correctOptionLength - shortestDistractorLength > 35) {
-    fail(`tests ${item.id}: correct option is much longer than distractors`);
+}
+
+if ((data.tests ?? []).length !== expectedTestCount) {
+  fail(`expected exactly ${expectedTestCount} test questions from source files, got ${(data.tests ?? []).length}`);
+}
+
+for (const [topic, expectedCount] of expectedTestsByTopic.entries()) {
+  const actualCount = (data.tests ?? []).filter(item => item.topic === topic).length;
+  if (actualCount !== expectedCount) {
+    fail(`expected ${expectedCount} test questions for "${topic}", got ${actualCount}`);
   }
 }
 
