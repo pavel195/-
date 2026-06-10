@@ -8,6 +8,15 @@ runInNewContext(source, sandbox, { filename: 'data/bank.js' });
 const data = sandbox.window.GEC_DATA;
 const errors = [];
 const allowedDifficulties = new Set(['base', 'medium', 'hard']);
+const expectedTopics = [
+  'ПРОГРАММИРОВАНИЕ НА PYTHON',
+  'МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ',
+  'АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ',
+  'SQL',
+  'WEB',
+  'АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ',
+  'JAVA'
+];
 const topics = new Set(data?.topics ?? []);
 
 function fail(message) {
@@ -36,6 +45,10 @@ function validateTopicAndDifficulty(item, collectionName) {
 
 if (!data || !Array.isArray(data.topics) || !data.topics.length) {
   fail('data.topics must be a non-empty array');
+}
+
+if (JSON.stringify(data?.topics ?? []) !== JSON.stringify(expectedTopics)) {
+  fail(`data.topics must exactly match expected sections: ${expectedTopics.join(', ')}`);
 }
 
 for (const collectionName of ['tests', 'oral', 'practice']) {

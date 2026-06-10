@@ -5,19 +5,13 @@ window.GEC_DATA = {
     "version": "1.0.0"
   },
   "topics": [
-    "Машинное обучение и Data Science",
-    "Алгоритмы и структуры данных",
-    "Python",
-    "SQL и базы данных",
-    "NLP, LLM и текстовый поиск",
-    "Web, HTML/CSS/JS и Django",
-    "Java и Spring",
-    "ОС и Linux",
-    "Сети и HTTP",
-    "Архитектура, микросервисы и C4",
-    "Docker, Kubernetes и инфраструктура",
-    "Git",
-    "Cloud и ITSM"
+    "ПРОГРАММИРОВАНИЕ НА PYTHON",
+    "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
+    "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
+    "SQL",
+    "WEB",
+    "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
+    "JAVA"
   ],
   "tests": [
     {
@@ -4820,3 +4814,57 @@ window.GEC_DATA.tests.forEach((item, index) => {
   ];
   item.answer = targetAnswerIndex;
 });
+
+const targetTopics = [
+  "ПРОГРАММИРОВАНИЕ НА PYTHON",
+  "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
+  "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
+  "SQL",
+  "WEB",
+  "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
+  "JAVA"
+];
+
+const topicAliases = {
+  "Python": "ПРОГРАММИРОВАНИЕ НА PYTHON",
+  "Машинное обучение и Data Science": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
+  "Алгоритмы и структуры данных": "АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ",
+  "SQL и базы данных": "SQL",
+  "Web, HTML/CSS/JS и Django": "WEB",
+  "NLP, LLM и текстовый поиск": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
+  "Java и Spring": "JAVA",
+  "ОС и Linux": "WEB",
+  "Сети и HTTP": "WEB",
+  "Архитектура, микросервисы и C4": "WEB",
+  "Docker, Kubernetes и инфраструктура": "WEB",
+  "Git": "WEB",
+  "Cloud и ITSM": "WEB"
+};
+
+function normalizeTopics(collection) {
+  collection.forEach(item => {
+    item.topic = topicAliases[item.topic] ?? item.topic;
+  });
+}
+
+function rebalanceAnswerPositions(items) {
+  items.forEach((item, index) => {
+    const targetAnswerIndex = index % item.options.length;
+    if (item.answer === targetAnswerIndex) return;
+
+    const correctOption = item.options[item.answer];
+    const distractors = item.options.filter((_, optionIndex) => optionIndex !== item.answer);
+    item.options = [
+      ...distractors.slice(0, targetAnswerIndex),
+      correctOption,
+      ...distractors.slice(targetAnswerIndex)
+    ];
+    item.answer = targetAnswerIndex;
+  });
+}
+
+window.GEC_DATA.topics = targetTopics;
+normalizeTopics(window.GEC_DATA.tests);
+normalizeTopics(window.GEC_DATA.oral);
+normalizeTopics(window.GEC_DATA.practice);
+rebalanceAnswerPositions(window.GEC_DATA.tests);
