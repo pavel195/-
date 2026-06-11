@@ -17,15 +17,20 @@ const expectedTopics = [
   'АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ',
   'JAVA'
 ];
-const expectedTestCount = 97;
+const expectedTestCount = 147;
 const expectedTestsByTopic = new Map([
-  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 14],
-  ['МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ', 13],
-  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 14],
-  ['SQL', 14],
-  ['WEB', 14],
-  ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 14],
+  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 16],
+  ['МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ', 30],
+  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 19],
+  ['SQL', 27],
+  ['WEB', 21],
+  ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 20],
   ['JAVA', 14]
+]);
+const expectedPracticeCount = 16;
+const expectedPracticeByTopic = new Map([
+  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 6],
+  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 10]
 ]);
 const topics = new Set(data?.topics ?? []);
 
@@ -81,7 +86,6 @@ for (const item of data.tests ?? []) {
   }
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
 
-  const optionLengths = item.options.map(option => String(option).trim().length);
   const normalizedOptions = item.options.map(option => String(option).trim().toLowerCase());
   if (new Set(normalizedOptions).size !== normalizedOptions.length) {
     fail(`tests ${item.id}: duplicate answer options`);
@@ -112,6 +116,17 @@ for (const item of data.practice ?? []) {
   if (!item.title?.trim()) fail(`practice ${item.id}: missing title`);
   if (!item.task?.trim()) fail(`practice ${item.id}: missing task`);
   if (!item.expected?.trim()) fail(`practice ${item.id}: missing expected result`);
+}
+
+if ((data.practice ?? []).length !== expectedPracticeCount) {
+  fail(`expected exactly ${expectedPracticeCount} practice tasks from source files, got ${(data.practice ?? []).length}`);
+}
+
+for (const [topic, expectedCount] of expectedPracticeByTopic.entries()) {
+  const actualCount = (data.practice ?? []).filter(item => item.topic === topic).length;
+  if (actualCount !== expectedCount) {
+    fail(`expected ${expectedCount} practice tasks for "${topic}", got ${actualCount}`);
+  }
 }
 
 const advancedTests = data.tests.filter(item => item.difficulty === 'medium' || item.difficulty === 'hard');
