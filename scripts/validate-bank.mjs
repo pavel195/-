@@ -116,6 +116,9 @@ for (const item of data.practice ?? []) {
   if (!item.title?.trim()) fail(`practice ${item.id}: missing title`);
   if (!item.task?.trim()) fail(`practice ${item.id}: missing task`);
   if (!item.expected?.trim()) fail(`practice ${item.id}: missing expected result`);
+  if (!item.sampleAnswer?.trim() || item.sampleAnswer.trim().length < 200) {
+    fail(`practice ${item.id}: missing substantive sample answer`);
+  }
 }
 
 if ((data.practice ?? []).length !== expectedPracticeCount) {

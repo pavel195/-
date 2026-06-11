@@ -2575,7 +2575,8 @@ window.GEC_DATA = {
       "title": "Ближайшая большая высота",
       "task": "Условие:\nДан массив целых чисел heights, где heights[i] — высота здания в i-м квартале.\nРеализуйте функцию:\npython\ndef next_greater_height(heights: list[int]) -> list[int]\nФункция возвращает массив answer, где answer[i] — количество кварталов, которое нужно проехать от i-го квартала, чтобы встретить здание строго большей высоты. Если такого здания нет — -1.\nОграничения:\nДлина массива: 1 ≤ n ≤ 10^5\nВысоты: 1 ≤ h ≤ 1000\nПример:\npython\nheights = [50, 60, 55, 70, 65, 45, 80, 40]\n# Ожидаемый результат: [1, 2, 1, 4, 2, 1, -1, -1]\nПояснение:\n50 → 60 (через 1) → 1\n60 → 70 (через 2) → 2\n55 → 70 (через 1) → 1\n70 → 80 (через 4) → 4\n65 → 80 (через 2) → 2\n45 → 80 (через 1) → 1\n80 → нет → -1\n40 → нет → -1\nТребования:\nУказать сложность O-большое\nАлгоритмическая парадигма: монотонный стек",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nИспользуем монотонный стек индексов. Идём справа налево и удаляем из стека здания, которые не выше текущего. После очистки верхушка стека - ближайшее справа здание строго большей высоты.\n\ndef next_greater_height(heights: list[int]) -> list[int]:\n    answer = [-1] * len(heights)\n    stack: list[int] = []\n    for i in range(len(heights) - 1, -1, -1):\n        while stack and heights[stack[-1]] <= heights[i]:\n            stack.pop()\n        if stack:\n            answer[i] = stack[-1] - i\n        stack.append(i)\n    return answer\n\nСложность: O(n) по времени, потому что каждый индекс кладётся и снимается со стека не более одного раза. Память: O(n) в худшем случае."
     },
     {
       "id": "practice-algo-2",
@@ -2583,7 +2584,8 @@ window.GEC_DATA = {
       "title": "Самый частотный символ (без учёта регистра)",
       "task": "Условие:\nДана строка s, содержащая буквы латинского алфавита, цифры и пробелы.\nРеализуйте функцию:\npython\ndef max_freq_char_sum(s: str) -> int\nФункция возвращает суммарное количество вхождений всех символов (игнорируя регистр: 'A' и 'a' считаются одним символом), частота которых максимальна. Небуквенные символы не учитываются.\nОпределения:\nЧастота символа = количество его вхождений в строке (без учёта регистра)\nmax_freq = максимальная частота среди всех букв\nНужно найти все буквы с частотой = max_freq и сложить их частоты\nОграничения:\nДлина строки: 0 ≤ len(s) ≤ 10^5\nСимволы: латиница (a-z, A-Z), цифры, пробелы\nПримеры:\npython\ns = \"a A b B c C d D D\"\n# Буквы: a(2), b(2), c(2), d(3)\n# max_freq = 3 (буква d)\n# Результат: 3\ns = \"Hello HELLO hello\"\n# h(3), e(3), l(6), o(3)\n# max_freq = 6 (буква l)\n# Результат: 6\ns = \"abc123 ABC\"\n# a(2), b(2), c(2)\n# max_freq = 2\n# Результат: 2+2+2 = 6\nТребования:\nСложность O(n) по времени, O(k) по памяти (k — количество уникальных букв)\nЗапрещено использовать collections.Counter (но можно реализовать свой подсчёт)",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nНужно пройти по строке один раз, учитывать только буквы и приводить их к нижнему регистру. Затем найти максимальную частоту и сложить частоты всех букв с таким значением.\n\ndef max_freq_char_sum(s: str) -> int:\n    freq: dict[str, int] = {}\n    for ch in s.lower():\n        if ch.isalpha() and 'a' <= ch <= 'z':\n            freq[ch] = freq.get(ch, 0) + 1\n    if not freq:\n        return 0\n    max_freq = max(freq.values())\n    return sum(value for value in freq.values() if value == max_freq)\n\nРешение не использует collections.Counter. Время: O(n), память: O(k), где k - число разных букв."
     },
     {
       "id": "practice-algo-3",
@@ -2591,7 +2593,8 @@ window.GEC_DATA = {
       "title": "Поиск k-го элемента двух отсортированных массивов",
       "task": "Условие:\nДаны два отсортированных по возрастанию массива целых чисел A и B. Реализуйте функцию:\npython\ndef find_kth_element(A: list[int], B: list[int], k: int) -> int\nФункция возвращает k-й по порядку элемент (отсчитывая с 1) объединённого массива.\nПримеры:\npython\nA = [1, 3, 5, 7]\nB = [2, 4, 6, 8]\nk = 5\n# Объединённый: [1,2,3,4,5,6,7,8]\n# 5-й элемент = 5\n# Результат: 5\nA = [10, 20, 30]\nB = [5, 15, 25, 35]\nk = 4\n# Объединённый: [5,10,15,20,25,30,35]\n# 4-й элемент = 20\n# Результат: 20\nA = []\nB = [1, 2, 3]\nk = 2\n# Результат: 2\nОграничения:\n0 ≤ len(A), len(B) ≤ 10^5\n1 ≤ k ≤ len(A) + len(B)\nЭлементы: -10^9 ≤ x ≤ 10^9\nТребования:\nСложность: O(log(min(n, m))) или O(log(n+m)) по времени\nПамять: O(1)\nЗапрещено сливать массивы",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nИспользуем бинарное исключение первых элементов. На каждом шаге сравниваем элементы около k/2 в двух массивах и отбрасываем часть, которая точно не содержит k-й элемент.\n\ndef find_kth_element(A: list[int], B: list[int], k: int) -> int:\n    i = j = 0\n    while True:\n        if i == len(A):\n            return B[j + k - 1]\n        if j == len(B):\n            return A[i + k - 1]\n        if k == 1:\n            return min(A[i], B[j])\n\n        step = k // 2\n        ni = min(i + step, len(A)) - 1\n        nj = min(j + step, len(B)) - 1\n        if A[ni] <= B[nj]:\n            k -= ni - i + 1\n            i = ni + 1\n        else:\n            k -= nj - j + 1\n            j = nj + 1\n\nКаждая итерация уменьшает k примерно вдвое. Время: O(log k), дополнительная память: O(1)."
     },
     {
       "id": "practice-algo-4",
@@ -2599,7 +2602,8 @@ window.GEC_DATA = {
       "title": "Объединение двух отсортированных списков времени",
       "task": "Часть 1. Слияние\nУсловие:\nДаны два списка событий во времени, отсортированных по возрастанию:\ntimes1 — время начала событий (секунды)\ntimes2 — время окончания событий (секунды)\nРеализуйте функцию:\npython\ndef merge_sorted_times(times1: list[int], times2: list[int]) -> list[int]\nФункция возвращает объединённый отсортированный список всех моментов времени.\nПример:\npython\ntimes1 = [10, 30, 50, 70]\ntimes2 = [20, 40, 60, 80]\n# Результат: [10, 20, 30, 40, 50, 60, 70, 80]\nЧасть 2. Сортировка слиянием для времени\nРеализуйте функцию:\npython\ndef merge_sort_times(times: list[int]) -> list[int]\nФункция сортирует массив моментов времени по возрастанию, используя алгоритм сортировки слиянием и функцию merge_sorted_times из части 1.\nПример:\npython\ntimes = [45, 12, 89, 23, 67, 34, 90, 11]\n# Результат: [11, 12, 23, 34, 45, 67, 89, 90]\nТребования:\nУказать сложность по времени и памяти\nНазвать минимум 2 недостатка сортировки слиянием по сравнению с быстрой сортировкой\nНе использовать встроенную сортировку",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nСлияние выполняется двумя указателями. Сортировку слиянием строим рекурсивно, используя эту функцию merge.\n\ndef merge_sorted_times(times1: list[int], times2: list[int]) -> list[int]:\n    i = j = 0\n    result: list[int] = []\n    while i < len(times1) and j < len(times2):\n        if times1[i] <= times2[j]:\n            result.append(times1[i]); i += 1\n        else:\n            result.append(times2[j]); j += 1\n    result.extend(times1[i:])\n    result.extend(times2[j:])\n    return result\n\ndef merge_sort_times(times: list[int]) -> list[int]:\n    if len(times) <= 1:\n        return times[:]\n    mid = len(times) // 2\n    return merge_sorted_times(merge_sort_times(times[:mid]), merge_sort_times(times[mid:]))\n\nСложность сортировки: O(n log n) по времени и O(n) по памяти. Недостатки: нужна дополнительная память, на малых массивах часто медленнее встроенной/quick sort из-за копирований."
     },
     {
       "id": "practice-algo-5",
@@ -2607,7 +2611,8 @@ window.GEC_DATA = {
       "title": "Бинарный поиск в массиве и поиск корня",
       "task": "Часть 1. Бинарный поиск первого вхождения\nРеализуйте функцию:\npython\ndef binary_search_first(arr: list[int], target: int) -> int\narr — отсортированный по возрастанию массив (могут быть дубликаты)\ntarget — искомое число\nВозвращает индекс первого вхождения target или -1, если элемент не найден\nПример:\npython\narr = [2, 4, 6, 8, 8, 8, 10, 12]\ntarget = 8\n# Результат: 3 (индекс первого 8)\narr = [1, 3, 5, 7]\ntarget = 4\n# Результат: -1\nЧасть 2. Поиск корня уравнения методом бисекции\nИспользуя ту же логику бинарного поиска (метод деления отрезка пополам), реализуйте функцию:\npython\ndef find_root(f, a: float, b: float, eps: float) -> float\nГде:\nf — функция (например, lambda x: x**3 - 2*x - 5)\na, b — границы отрезка, на котором f(a) и f(b) имеют разные знаки\neps — точность\nВозвращает приближённое значение корня\nПример:\npython\nf = lambda x: x**3 - 2*x - 5\n# Корень на отрезке [2, 3] с точностью 0.00001\n# Ожидаемый результат: ~2.094...\nТребования:\nДля бинарного поиска: сложность O(log n)\nДля поиска корня: сложность O(log((b-a)/eps))",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nПервая часть - бинарный поиск левой границы. Вторая - метод бисекции при разных знаках на концах отрезка.\n\ndef binary_search_first(arr: list[int], target: int) -> int:\n    left, right = 0, len(arr) - 1\n    answer = -1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] >= target:\n            if arr[mid] == target:\n                answer = mid\n            right = mid - 1\n        else:\n            left = mid + 1\n    return answer\n\ndef find_root(f, a: float, b: float, eps: float) -> float:\n    if f(a) * f(b) > 0:\n        raise ValueError('На концах отрезка должны быть разные знаки')\n    while b - a > eps:\n        mid = (a + b) / 2\n        if f(a) * f(mid) <= 0:\n            b = mid\n        else:\n            a = mid\n    return (a + b) / 2\n\nСложность: O(log n) для поиска и O(log((b-a)/eps)) для бисекции."
     },
     {
       "id": "practice-algo-6",
@@ -2615,7 +2620,8 @@ window.GEC_DATA = {
       "title": "Проверка правильной вложенности тегов",
       "task": "Условие:\nДана строка html, содержащая текст и HTML-подобные теги двух типов:\n<tag> и </tag> — угловые скобки\n{tag} и {/tag} — фигурные скобки\nРеализуйте функцию:\npython\ndef is_valid_tags(s: str) -> bool\nФункция проверяет, являются ли теги правильно вложенными:\nКаждый открывающий тег должен иметь соответствующий закрывающий того же типа\nТеги должны быть правильно вложены (нельзя закрыть внешний тег до внутреннего)\nЛюбые другие символы (текст, пробелы, цифры) игнорируются\nПримеры:\npython\n\"<div>text</div>\"           → True\n\"{b}bold{/b}\"               → True\n\"<div>{i}text{/i}</div>\"    → True\n\"<div>{i}text</div>{/i}\"    → False (неправильный порядок)\n\"<div>text{/div}\"           → False (несовпадение типов)\n\"just text no tags\"         → True\n\"<div><span>text</span></div>\" → True\n\"<div><span>text</div></span>\" → False\nТребования:\nСложность: O(n) по времени, O(n) по памяти в худшем случае\nИспользовать структуру данных \"стек\"\nИгнорировать все символы, кроме <, >, {, }, /",
       "expected": "Решение должно соответствовать условию, ограничениям и заявленной алгоритмической сложности.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nРазбираем только теги вида <tag>, </tag>, {tag}, {/tag}. Открывающий тег кладём в стек вместе с типом скобок, закрывающий должен совпасть с верхушкой.\n\nimport re\n\ndef is_valid_tags(s: str) -> bool:\n    pattern = re.compile(r'(</?[a-zA-Z][a-zA-Z0-9]*>|{/?[a-zA-Z][a-zA-Z0-9]*})')\n    stack: list[tuple[str, str]] = []\n    for token in pattern.findall(s):\n        bracket = '<' if token.startswith('<') else '{'\n        closing = token.startswith('</') or token.startswith('{/')\n        name = token.strip('<>{}/')\n        if not closing:\n            stack.append((bracket, name))\n        else:\n            if not stack or stack[-1] != (bracket, name):\n                return False\n            stack.pop()\n    return not stack\n\nАлгоритм проходит строку один раз. Время: O(n), память: O(n) в случае глубокой вложенности."
     },
     {
       "id": "practice-python-1",
@@ -2623,7 +2629,8 @@ window.GEC_DATA = {
       "title": "Класс DataKeeper",
       "task": "Метод __init__ создаёт поля:\nsource — исходный список чисел\ndistinct — список уникальных элементов в порядке первого появления\nСвойство sum_distinct возвращает сумму элементов distinct.\nСтатический метод calc_average(instance) возвращает среднее арифметическое distinct.\nКлассовый метод from_comma_string(text) принимает строку с числами через запятую и возвращает новый экземпляр.\nМагический метод __len__ возвращает количество уникальных элементов.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nКласс хранит исходный список, строит уникальные элементы в порядке первого появления и реализует требуемые методы.\n\nclass DataKeeper:\n    def __init__(self, source):\n        self.source = list(source)\n        seen = set()\n        self.distinct = []\n        for item in self.source:\n            if item not in seen:\n                seen.add(item)\n                self.distinct.append(item)\n\n    @property\n    def sum_distinct(self):\n        return sum(self.distinct)\n\n    @staticmethod\n    def calc_average(instance):\n        return instance.sum_distinct / len(instance.distinct) if instance.distinct else 0\n\n    @classmethod\n    def from_comma_string(cls, text):\n        values = [int(part.strip()) for part in text.split(',') if part.strip()]\n        return cls(values)\n\n    def __len__(self):\n        return len(self.distinct)\n\nВажно проверить пустой список, повторяющиеся значения и строку с пробелами."
     },
     {
       "id": "practice-python-2",
@@ -2631,7 +2638,8 @@ window.GEC_DATA = {
       "title": "Генератор, рекурсия, производительность",
       "task": "Напишите генератор generate_sequence(n), возвращающий первые n чисел последовательности Люка (Lucas):\nL0 = 2, L1 = 1, Ln = Ln-1 + Ln-2\nНапишите рекурсивную функцию lucas_recursive(k), возвращающую k-е число Люка.\nНапишите функцию compare_lucas_performance(n), измеряющую время получения первых n чисел тремя способами:\nчерез генератор\nчерез рекурсию без оптимизации\nчерез рекурсию с мемоизацией\nРезультаты выводятся в консоль.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nГенератор строит числа Люка итеративно. Для рекурсии без оптимизации показываем базовый вариант, а для производительности добавляем мемоизацию.\n\nfrom functools import lru_cache\nfrom time import perf_counter\n\ndef generate_sequence(n):\n    a, b = 2, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\ndef lucas_recursive(k):\n    if k == 0:\n        return 2\n    if k == 1:\n        return 1\n    return lucas_recursive(k - 1) + lucas_recursive(k - 2)\n\n@lru_cache(maxsize=None)\ndef lucas_cached(k):\n    if k < 2:\n        return 2 if k == 0 else 1\n    return lucas_cached(k - 1) + lucas_cached(k - 2)\n\ndef compare_lucas_performance(n):\n    for name, action in [\n        ('generator', lambda: list(generate_sequence(n))),\n        ('recursive', lambda: [lucas_recursive(i) for i in range(n)]),\n        ('cached', lambda: [lucas_cached(i) for i in range(n)]),\n    ]:\n        start = perf_counter()\n        action()\n        print(name, round((perf_counter() - start) * 1000, 2), 'ms')\n\nВывод должен показать резкий проигрыш рекурсии без мемоизации."
     },
     {
       "id": "practice-python-3",
@@ -2639,7 +2647,8 @@ window.GEC_DATA = {
       "title": "Класс-итератор TableMapper",
       "task": "Инициализация принимает список списков: первый подсписок — имена полей, остальные — строки записей.\nПри итерации возвращает словарь {поле: значение}.\nОбрабатывает без аварийного завершения:\nпередан пустой список\nстрока короче списка полей\nстрока пуста\nПроблемные строки пропускаются.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nИтератор должен пропускать некорректные строки и возвращать словарь по заголовку.\n\nclass TableMapper:\n    def __init__(self, rows):\n        self.rows = rows or []\n        self.fields = self.rows[0] if self.rows else []\n        self.index = 1\n\n    def __iter__(self):\n        self.index = 1\n        return self\n\n    def __next__(self):\n        while self.index < len(self.rows):\n            row = self.rows[self.index]\n            self.index += 1\n            if not row or len(row) < len(self.fields):\n                continue\n            return dict(zip(self.fields, row))\n        raise StopIteration\n\nПример: list(TableMapper([['id','name'], [1,'Ann'], [], [2]])) вернёт только корректную строку. Пустой вход даст пустую итерацию без ошибки."
     },
     {
       "id": "practice-python-4",
@@ -2647,7 +2656,8 @@ window.GEC_DATA = {
       "title": "Анализ временных рядов",
       "task": "Функция process_time_series(records):\nПринимает список словарей с ключами:\ndt — строка в формате \"ГГГГ-ММ-ДД\"\namount — число\ngroup — строка\nПреобразует dt в три поля: yr, mo, dy.\nДля каждой группы вычисляет скользящее среднее amount с окном 3 дня (предыдущий, текущий, следующий). При недостатке данных — пропуск.\nВозвращает новый список словарей с добавленными полями yr, mo, dy и rolling_avg.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nНужно распарсить дату, сгруппировать записи и считать среднее по соседним элементам внутри группы после сортировки по дате.\n\nfrom datetime import datetime\nfrom collections import defaultdict\n\ndef process_time_series(records):\n    prepared = []\n    for row in records:\n        dt = datetime.strptime(row['dt'], '%Y-%m-%d').date()\n        new_row = dict(row)\n        new_row['yr'], new_row['mo'], new_row['dy'] = dt.year, dt.month, dt.day\n        new_row['_dt'] = dt\n        prepared.append(new_row)\n\n    groups = defaultdict(list)\n    for row in prepared:\n        groups[row['group']].append(row)\n\n    result = []\n    for rows in groups.values():\n        rows.sort(key=lambda item: item['_dt'])\n        for i in range(1, len(rows) - 1):\n            window = rows[i - 1:i + 2]\n            item = dict(rows[i])\n            item['rolling_avg'] = sum(x['amount'] for x in window) / 3\n            item.pop('_dt', None)\n            result.append(item)\n    return result\n\nКрайние элементы группы пропускаются, потому что для них нет полного окна из трёх дней."
     },
     {
       "id": "practice-python-5",
@@ -2655,7 +2665,8 @@ window.GEC_DATA = {
       "title": "Декоратор trace_calls",
       "task": "Декоратор выводит в консоль:\nимя функции\nпереданные аргументы\nвозвращаемое значение\nвремя выполнения в миллисекундах\nПримените декоратор к функции extract_unique(lst), которая принимает список целых чисел и возвращает список элементов, встречающихся ровно один раз.\nПорядок элементов сохраняется.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nДекоратор оборачивает функцию, замеряет время и печатает аргументы, результат и длительность. Функция extract_unique считает частоты и сохраняет порядок.\n\nfrom functools import wraps\nfrom time import perf_counter\n\ndef trace_calls(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        start = perf_counter()\n        result = func(*args, **kwargs)\n        elapsed = (perf_counter() - start) * 1000\n        print(f'function={func.__name__}')\n        print(f'args={args}, kwargs={kwargs}')\n        print(f'result={result}')\n        print(f'time_ms={elapsed:.3f}')\n        return result\n    return wrapper\n\n@trace_calls\ndef extract_unique(lst):\n    freq = {}\n    for item in lst:\n        freq[item] = freq.get(item, 0) + 1\n    return [item for item in lst if freq[item] == 1]\n\nПроверки: пустой список, все элементы уникальны, повторяющиеся элементы в разных местах."
     },
     {
       "id": "practice-python-6",
@@ -2663,7 +2674,8 @@ window.GEC_DATA = {
       "title": "Наследование и полиморфизм",
       "task": "Базовый класс Figure с методом get_area(), возвращающим 0.\nПроизводные классы:\nSquare(side) — площадь стороны²\nDisk(radius) — площадь πr²\nRightTriangle(a, b) — площадь (a*b)/2\nКаждый переопределяет get_area().\nФункция sum_areas(figures) принимает список наследников Figure и возвращает сумму площадей.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "sampleAnswer": "Пример ответа:\nБазовый класс задаёт общий интерфейс, наследники переопределяют расчёт площади, а sum_areas работает полиморфно.\n\nfrom math import pi\n\nclass Figure:\n    def get_area(self):\n        return 0\n\nclass Square(Figure):\n    def __init__(self, side):\n        self.side = side\n    def get_area(self):\n        return self.side ** 2\n\nclass Disk(Figure):\n    def __init__(self, radius):\n        self.radius = radius\n    def get_area(self):\n        return pi * self.radius ** 2\n\nclass RightTriangle(Figure):\n    def __init__(self, a, b):\n        self.a = a\n        self.b = b\n    def get_area(self):\n        return self.a * self.b / 2\n\ndef sum_areas(figures):\n    return sum(figure.get_area() for figure in figures)\n\nПример: sum_areas([Square(2), RightTriangle(3, 4)]) вернёт 10.0."
     },
     {
       "id": "practice-python-7",
@@ -2671,7 +2683,8 @@ window.GEC_DATA = {
       "title": "Рекурсивное уплощение словаря",
       "task": "Функция deep_flatten(source, prefix=\"\"):\nПринимает словарь source, возвращает «плоский» словарь.\nПравила:\nесли значение — словарь → рекурсивный вызов\nесли значение — список → рекурсия с добавлением индекса в ключ\nиначе → запись значения с ключом из всех вложенных ключей через точку\nПример:\ndeep_flatten({\"m\": {\"n\": 5, \"p\": [6, 7]}, \"q\": 8}) →\n{\"m.n\": 5, \"m.p.0\": 6, \"m.p.1\": 7, \"q\": 8}",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nРекурсивно обходим словарь и списки. Для словаря добавляем имя ключа, для списка - индекс элемента.\n\ndef deep_flatten(source, prefix=''):\n    result = {}\n\n    def visit(value, path):\n        if isinstance(value, dict):\n            for key, nested in value.items():\n                next_path = f'{path}.{key}' if path else str(key)\n                visit(nested, next_path)\n        elif isinstance(value, list):\n            for index, nested in enumerate(value):\n                next_path = f'{path}.{index}' if path else str(index)\n                visit(nested, next_path)\n        else:\n            result[path] = value\n\n    visit(source, prefix)\n    return result\n\nДля примера {'m': {'n': 5, 'p': [6, 7]}, 'q': 8} получится {'m.n': 5, 'm.p.0': 6, 'm.p.1': 7, 'q': 8}."
     },
     {
       "id": "practice-python-8",
@@ -2679,7 +2692,8 @@ window.GEC_DATA = {
       "title": "Контекстный менеджер FileWriter",
       "task": "При инициализации принимает путь к файлу.\nПри входе в with открывает файл для записи.\nПри выходе автоматически закрывает файл и выводит количество записанных байт.\nЕсли внутри блока возникает исключение, менеджер записывает в файл сообщение об ошибке и не подавляет исключение.",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nКонтекстный менеджер открывает файл, считает записанные байты и в случае ошибки дописывает сообщение, но возвращает False, чтобы исключение не подавлялось.\n\nclass FileWriter:\n    def __init__(self, path):\n        self.path = path\n        self.file = None\n        self.bytes_written = 0\n\n    def __enter__(self):\n        self.file = open(self.path, 'w', encoding='utf-8')\n        return self\n\n    def write(self, text):\n        self.file.write(text)\n        self.bytes_written += len(text.encode('utf-8'))\n\n    def __exit__(self, exc_type, exc, traceback):\n        if exc is not None:\n            message = f'Ошибка: {exc}\\n'\n            self.file.write(message)\n            self.bytes_written += len(message.encode('utf-8'))\n        self.file.close()\n        print(f'Записано байт: {self.bytes_written}')\n        return False\n\nПример использования: with FileWriter('out.txt') as writer: writer.write('hello')."
     },
     {
       "id": "practice-python-9",
@@ -2687,7 +2701,8 @@ window.GEC_DATA = {
       "title": "Валидация и обработка данных",
       "task": "Функция validate_and_compute(input_dict):\nПринимает словарь с полями:\nvalues — список целых чисел\nmode — строка, одно из: \"sum\", \"avg\", \"max\", \"min\"\nВалидация:\nvalues — непустой список целых чисел\nmode — допустимое значение\nВозвращает словарь:\nпри успехе: {\"status\": \"ok\", \"result\": <результат>}\nпри ошибке: {\"status\": \"fail\", \"message\": \"<текст ошибки>\"}",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nФункция сначала валидирует структуру входных данных, затем выполняет выбранную операцию. Ошибки возвращаются в едином формате.\n\ndef validate_and_compute(input_dict):\n    try:\n        values = input_dict.get('values')\n        mode = input_dict.get('mode')\n        if not isinstance(values, list) or not values:\n            return {'status': 'fail', 'message': 'values должен быть непустым списком'}\n        if not all(isinstance(item, int) for item in values):\n            return {'status': 'fail', 'message': 'values должен содержать только int'}\n        if mode not in {'sum', 'avg', 'max', 'min'}:\n            return {'status': 'fail', 'message': 'mode имеет недопустимое значение'}\n\n        operations = {\n            'sum': sum(values),\n            'avg': sum(values) / len(values),\n            'max': max(values),\n            'min': min(values),\n        }\n        return {'status': 'ok', 'result': operations[mode]}\n    except Exception as error:\n        return {'status': 'fail', 'message': str(error)}\n\nНужно проверить пустой список, неверный mode, нечисловые элементы и корректный happy path."
     },
     {
       "id": "practice-python-10",
@@ -2695,7 +2710,8 @@ window.GEC_DATA = {
       "title": "Класс GridAnalyzer",
       "task": "Метод __init__ принимает двумерный список grid.\nfetch_row(i) — возвращает список элементов строки i.\nfetch_col(j) — возвращает список элементов столбца j.\nfind_max() — возвращает максимальный элемент.\nfind_min() — возвращает минимальный элемент.\ncreate_transpose() — возвращает новую транспонированную матрицу.\nПри некорректных индексах методы возвращают None и выводят сообщение в консоль.\nТребования к сложности:\nfind_max() и find_min() — O(N×M)\ncreate_transpose() — O(N×M)",
       "expected": "Решение должно реализовать все перечисленные методы, функции и обработку крайних случаев.",
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "sampleAnswer": "Пример ответа:\nКласс хранит матрицу, безопасно возвращает строки/столбцы, ищет минимум/максимум и строит транспонированную матрицу.\n\nclass GridAnalyzer:\n    def __init__(self, grid):\n        self.grid = grid\n\n    def fetch_row(self, i):\n        if 0 <= i < len(self.grid):\n            return self.grid[i]\n        print('Некорректный индекс строки')\n        return None\n\n    def fetch_col(self, j):\n        if not self.grid or any(j < 0 or j >= len(row) for row in self.grid):\n            print('Некорректный индекс столбца')\n            return None\n        return [row[j] for row in self.grid]\n\n    def find_max(self):\n        return max(max(row) for row in self.grid if row)\n\n    def find_min(self):\n        return min(min(row) for row in self.grid if row)\n\n    def create_transpose(self):\n        if not self.grid:\n            return []\n        return [[row[j] for row in self.grid] for j in range(len(self.grid[0]))]\n\nfind_max, find_min и create_transpose работают за O(N*M). Некорректные индексы не приводят к падению программы."
     }
   ]
 };

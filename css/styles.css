@@ -247,6 +247,19 @@ button.copy { background: #f0f3f8; color: var(--text); padding: 9px 12px; }
   border-radius: 10px;
   color: var(--muted);
 }
+.sample-answer {
+  margin-top: 12px;
+  padding: 12px;
+  border-left: 4px solid var(--ok);
+  background: #f7fcf9;
+  border-radius: 10px;
+  color: var(--text);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
 details {
   margin-top: 12px;
   border: 1px dashed var(--line);

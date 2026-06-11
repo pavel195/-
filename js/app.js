@@ -163,6 +163,10 @@ function renderPractice() {
         <summary>Что будет проверять комиссия</summary>
         <div class="expected">${escapeHtml(item.expected)}</div>
       </details>
+      <details>
+        <summary>Пример ответа</summary>
+        <div class="sample-answer">${escapeHtml(item.sampleAnswer)}</div>
+      </details>
     </article>
   `).join('') : '<div class="empty">Практические задания не найдены.</div>';
 }
@@ -190,6 +194,7 @@ function renderExam() {
       <h3>Практика: ${escapeHtml(item.title)}</h3>
       <div class="practice-task">${escapeHtml(item.task)}</div>
       <details><summary>Критерии проверки</summary><div class="expected">${escapeHtml(item.expected)}</div></details>
+      <details><summary>Пример ответа</summary><div class="sample-answer">${escapeHtml(item.sampleAnswer)}</div></details>
     </article>
   `).join('') : '<div class="empty">Нет практики по фильтру.</div>';
 
