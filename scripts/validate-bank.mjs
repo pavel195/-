@@ -58,6 +58,18 @@ function validateTopicAndDifficulty(item, collectionName) {
   }
 }
 
+function validateNoLiteralNewlineEscapes(item) {
+  const literalNewlineEscape = '\\n';
+  for (const [index, option] of item.options.entries()) {
+    if (String(option).includes(literalNewlineEscape)) {
+      fail(`tests ${item.id}: option ${index + 1} contains literal \\n instead of a line break`);
+    }
+  }
+  if (String(item.explanation ?? '').includes(literalNewlineEscape)) {
+    fail(`tests ${item.id}: explanation contains literal \\n instead of a line break`);
+  }
+}
+
 if (!data || !Array.isArray(data.topics) || !data.topics.length) {
   fail('data.topics must be a non-empty array');
 }
@@ -85,6 +97,7 @@ for (const item of data.tests ?? []) {
     fail(`tests ${item.id}: answer index is out of options range`);
   }
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
+  validateNoLiteralNewlineEscapes(item);
 
   const normalizedOptions = item.options.map(option => String(option).trim().toLowerCase());
   if (new Set(normalizedOptions).size !== normalizedOptions.length) {

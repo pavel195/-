@@ -187,13 +187,13 @@ window.GEC_DATA = {
       "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой результат выполнения кода обучения модели с кросс-валидацией?\nfrom sklearn.model_selection import cross_val_score\nfrom sklearn.tree import DecisionTreeClassifier\nimport numpy as np\nX = np.array([[i] for i in range(100)])\ny = np.array([0 if i < 50 else 1 for i in range(100)])\nclf = DecisionTreeClassifier(random_state=42)\nscores = cross_val_score(clf, X, y, cv=5)\nprint(f\"Folds: {len(scores)}\")\nprint(f\"Perfect: {all(s == 1.0 for s in scores)}\")",
       "options": [
-        "Folds: 5\\nPerfect: False",
-        "Folds: 10\\nPerfect: True",
-        "Folds: 5\\nPerfect: True",
-        "Folds: 3\\nPerfect: False"
+        "Folds: 5\nPerfect: False",
+        "Folds: 10\nPerfect: True",
+        "Folds: 5\nPerfect: True",
+        "Folds: 3\nPerfect: False"
       ],
       "answer": 0,
-      "explanation": "Правильный ответ: Folds: 5\\nPerfect: False.",
+      "explanation": "Правильный ответ: Folds: 5\nPerfect: False.",
       "difficulty": "hard"
     },
     {
@@ -713,7 +713,7 @@ window.GEC_DATA = {
     {
       "id": "v2-s1-q3",
       "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
-      "question": "Что выведет следующий код с type hints?\nfrom typing import Optional\n\ndef foo(x: Optional[int] = None) -> str:\n       return str(x)\n\n print(foo())",
+      "question": "Что выведет следующий код с type hints?\nfrom typing import Optional\n\ndef foo(x: Optional[int] = None) -> str:\n       return str(x)\n\nprint(foo())",
       "options": [
         "0",
         "Ошибка TypeError",
@@ -729,13 +729,13 @@ window.GEC_DATA = {
       "topic": "ПРОГРАММИРОВАНИЕ НА PYTHON",
       "question": "Что выведет следующий код с использованием collections.Counter?\nfrom collections import Counter\n\nc = Counter('abracadabra')\nprint(c.most_common(2))",
       "options": [
-        "[(‘b’, 2), (‘r’, 2)]",
-        "[(‘a’, 5), (‘b’, 2)]",
-        "{‘a’: 5, ‘b’: 2}",
-        "[(‘a’, 5), (‘r’, 2)]"
+        "[('b', 2), ('r', 2)]",
+        "[('a', 5), ('r', 2)]",
+        "{'a': 5, 'b': 2}",
+        "[('a', 5), ('b', 2)]"
       ],
       "answer": 3,
-      "explanation": "Правильный ответ: [(‘a’, 5), (‘r’, 2)].",
+      "explanation": "Правильный ответ: [('a', 5), ('b', 2)].",
       "difficulty": "medium"
     },
     {
@@ -799,13 +799,13 @@ window.GEC_DATA = {
       "topic": "МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ",
       "question": "Какой результат выполнения кода обучения модели с кросс-валидацией?\nfrom sklearn.model_selection import cross_val_score\nfrom sklearn.tree import DecisionTreeClassifier\nimport numpy as np\nX = np.array([[i] for i in range(100)])\ny = np.array([0 if i < 50 else 1 for i in range(100)])\nclf = DecisionTreeClassifier(random_state=42)\nscores = cross_val_score(clf, X, y, cv=5)\nprint(f\"Folds: {len(scores)}\")\nprint(f\"Perfect: {all(s == 1.0 for s in scores)}\")",
       "options": [
-        "Folds: 5\\nPerfect: False",
-        "Folds: 5\\nPerfect: True",
-        "Folds: 10\\nPerfect: True",
-        "Folds: 3\\nPerfect: False"
+        "Folds: 5\nPerfect: False",
+        "Folds: 5\nPerfect: True",
+        "Folds: 10\nPerfect: True",
+        "Folds: 3\nPerfect: False"
       ],
       "answer": 0,
-      "explanation": "Правильный ответ: Folds: 5\\nPerfect: False.",
+      "explanation": "Правильный ответ: Folds: 5\nPerfect: False.",
       "difficulty": "base"
     },
     {
@@ -1342,13 +1342,13 @@ window.GEC_DATA = {
       "topic": "JAVA",
       "question": "Какой результат выполнения данного кода?\nOptional<String> opt = Optional.ofNullable(null);\nString result = opt.orElse(\"default\");\nSystem.out.println(result);",
       "options": [
-        "Null",
+        "null",
         "Ошибка: NullPointerException",
         "Optional.empty",
-        "Default"
+        "default"
       ],
       "answer": 3,
-      "explanation": "Правильный ответ: Default.",
+      "explanation": "Правильный ответ: default.",
       "difficulty": "medium"
     },
     {
@@ -1910,13 +1910,13 @@ window.GEC_DATA = {
       "topic": "АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ",
       "question": "Какие функции активации обычно есть в слое LSTM?",
       "options": [
-        "Сигмоид",
+        "Сигмоид и tanh",
         "Tanh",
         "Relu",
         "units"
       ],
       "answer": 0,
-      "explanation": "Правильный ответ: Сигмоид.",
+      "explanation": "Правильный ответ: Сигмоид и tanh.",
       "difficulty": "base"
     },
     {
