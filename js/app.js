@@ -1,6 +1,9 @@
 const data = window.GEC_DATA;
 let currentTestQuestions = [];
 let currentExamTests = [];
+const EXAM_TESTS_PER_SECTION = 8;
+const EXAM_ORAL_COUNT = 3;
+const EXAM_PRACTICE_COUNT = 1;
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => Array.from(document.querySelectorAll(selector));
@@ -171,16 +174,33 @@ function renderPractice() {
   `).join('') : '<div class="empty">Практические задания не найдены.</div>';
 }
 
+function buildExamTestSections(topic, difficulty) {
+  const topics = topic === 'all' ? data.topics : [topic];
+  return topics.map(sectionTopic => {
+    const items = shuffle(filterItems(data.tests, sectionTopic, difficulty)).slice(0, EXAM_TESTS_PER_SECTION);
+    return {topic: sectionTopic, items};
+  }).filter(section => section.items.length > 0);
+}
+
 function renderExam() {
   const topic = byId('examTopic').value;
   const diff = byId('examDifficulty').value;
-  const tests = shuffle(filterItems(data.tests, topic, diff)).slice(0, 12);
-  const oralItems = shuffle(filterItems(data.oral, topic)).slice(0, 3);
-  const practiceItems = shuffle(filterItems(data.practice, topic, diff)).slice(0, 1);
+  const testSections = buildExamTestSections(topic, diff);
+  const tests = testSections.flatMap(section => section.items);
+  const oralItems = shuffle(filterItems(data.oral, topic)).slice(0, EXAM_ORAL_COUNT);
+  const practiceItems = shuffle(filterItems(data.practice, topic, diff)).slice(0, EXAM_PRACTICE_COUNT);
   currentExamTests = tests;
   byId('examResult').textContent = '';
 
-  const testHtml = tests.length ? tests.map((item, i) => renderTestCard(item, i, 'exam')).join('') : '<div class="empty">Нет тестов по фильтру.</div>';
+  const testHtml = testSections.length ? testSections.map((section, sectionIndex) => `
+    <section class="exam-section">
+      <div class="exam-section-head">
+        <h2>Раздел ${sectionIndex + 1}. ${escapeHtml(section.topic)}</h2>
+        <span>${section.items.length}/${EXAM_TESTS_PER_SECTION} тестов</span>
+      </div>
+      ${section.items.map((item, i) => renderTestCard(item, i, 'exam')).join('')}
+    </section>
+  `).join('') : '<div class="empty">Нет тестов по фильтру.</div>';
   const oralHtml = oralItems.length ? oralItems.map((item, i) => `
     <article class="card">
       <div class="card-head"><span class="badge">${escapeHtml(item.topic)}</span><strong>Устный ${i + 1}</strong></div>
@@ -200,8 +220,8 @@ function renderExam() {
 
   byId('examContent').innerHTML = `
     <h2>Тестовая часть</h2>${testHtml}
-    <h2>Устная часть</h2>${oralHtml}
-    <h2>Практическая часть</h2>${practiceHtml}
+    <h2>Устная часть: ${oralItems.length}/${EXAM_ORAL_COUNT}</h2>${oralHtml}
+    <h2>Практическая часть: ${practiceItems.length}/${EXAM_PRACTICE_COUNT}</h2>${practiceHtml}
   `;
 }
 
