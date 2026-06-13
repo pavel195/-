@@ -82,7 +82,8 @@ function renderOptionExplanations(item) {
   if (!Array.isArray(item.optionExplanations) || item.optionExplanations.length !== item.options.length) {
     return '';
   }
-  const rows = item.optionExplanations.map((text, i) => `
+  const explanations = item.optionExplanations;
+  const rows = explanations.map((text, i) => `
     <li>
       <strong>${String.fromCharCode(1072 + i)}) ${escapeHtml(item.options[i])}</strong>
       <span>${escapeHtml(text)}</span>

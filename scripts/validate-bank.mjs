@@ -114,16 +114,14 @@ for (const item of data.tests ?? []) {
     fail(`tests ${item.id}: answer index is out of options range`);
   }
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
-  if (item.optionExplanations !== undefined) {
-    if (!Array.isArray(item.optionExplanations) || item.optionExplanations.length !== item.options.length) {
-      fail(`tests ${item.id}: optionExplanations must match options length`);
-    } else {
-      item.optionExplanations.forEach((text, index) => {
-        if (!String(text).trim()) {
-          fail(`tests ${item.id}: missing option explanation ${index + 1}`);
-        }
-      });
-    }
+  if (!Array.isArray(item.optionExplanations) || item.optionExplanations.length !== item.options.length) {
+    fail(`tests ${item.id}: optionExplanations must match options length`);
+  } else {
+    item.optionExplanations.forEach((text, index) => {
+      if (!String(text).trim()) {
+        fail(`tests ${item.id}: missing option explanation ${index + 1}`);
+      }
+    });
   }
   validateNoLiteralNewlineEscapes(item);
 
