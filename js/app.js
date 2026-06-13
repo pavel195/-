@@ -78,6 +78,19 @@ function renderTestCard(item, index, prefix = 'test') {
   `;
 }
 
+function renderOptionExplanations(item) {
+  if (!Array.isArray(item.optionExplanations) || item.optionExplanations.length !== item.options.length) {
+    return '';
+  }
+  const rows = item.optionExplanations.map((text, i) => `
+    <li>
+      <strong>${String.fromCharCode(1072 + i)}) ${escapeHtml(item.options[i])}</strong>
+      <span>${escapeHtml(text)}</span>
+    </li>
+  `).join('');
+  return `<div class="option-explanations"><strong>Разбор вариантов</strong><ul>${rows}</ul></div>`;
+}
+
 function checkCards(containerId, resultId) {
   const cards = $$(`#${containerId} .question-card`);
   let correct = 0;
@@ -91,8 +104,9 @@ function checkCards(containerId, resultId) {
     card.classList.remove('correct', 'wrong');
 
     const explanation = card.querySelector('.explanation');
+    const optionExplanations = renderOptionExplanations(item);
     if (!selected) {
-      explanation.innerHTML = `<span class="wrong-answer">Нет ответа.</span> Правильный ответ: <span class="correct-answer">${String.fromCharCode(1072 + answer)}) ${escapeHtml(item.options[answer])}</span><br>${escapeHtml(item.explanation)}`;
+      explanation.innerHTML = `<span class="wrong-answer">Нет ответа.</span> Правильный ответ: <span class="correct-answer">${String.fromCharCode(1072 + answer)}) ${escapeHtml(item.options[answer])}</span><br>${escapeHtml(item.explanation)}${optionExplanations}`;
       card.classList.add('wrong');
       return;
     }
@@ -102,10 +116,10 @@ function checkCards(containerId, resultId) {
     if (selectedValue === answer) {
       correct += 1;
       card.classList.add('correct');
-      explanation.innerHTML = `<span class="correct-answer">Верно.</span> ${escapeHtml(item.explanation)}`;
+      explanation.innerHTML = `<span class="correct-answer">Верно.</span> ${escapeHtml(item.explanation)}${optionExplanations}`;
     } else {
       card.classList.add('wrong');
-      explanation.innerHTML = `<span class="wrong-answer">Ошибка.</span> Ты выбрал ${String.fromCharCode(1072 + selectedValue)}), правильный ответ: <span class="correct-answer">${String.fromCharCode(1072 + answer)}) ${escapeHtml(item.options[answer])}</span><br>${escapeHtml(item.explanation)}`;
+      explanation.innerHTML = `<span class="wrong-answer">Ошибка.</span> Ты выбрал ${String.fromCharCode(1072 + selectedValue)}), правильный ответ: <span class="correct-answer">${String.fromCharCode(1072 + answer)}) ${escapeHtml(item.options[answer])}</span><br>${escapeHtml(item.explanation)}${optionExplanations}`;
     }
   });
 

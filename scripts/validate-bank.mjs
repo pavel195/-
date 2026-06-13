@@ -17,15 +17,15 @@ const expectedTopics = [
   'АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ',
   'JAVA'
 ];
-const expectedTestCount = 147;
+const expectedTestCount = 172;
 const expectedTestsByTopic = new Map([
-  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 16],
-  ['МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ', 30],
-  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 19],
-  ['SQL', 27],
-  ['WEB', 21],
-  ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 20],
-  ['JAVA', 14]
+  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 21],
+  ['МАШИННОЕ ОБУЧЕНИЕ И АНАЛИЗ ДАННЫХ', 34],
+  ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 21],
+  ['SQL', 31],
+  ['WEB', 26],
+  ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 23],
+  ['JAVA', 16]
 ]);
 const expectedPracticeCount = 26;
 const expectedPracticeByTopic = new Map([
@@ -71,6 +71,15 @@ function validateNoLiteralNewlineEscapes(item) {
   }
 }
 
+function normalizeQuestion(text) {
+  return String(text)
+    .toLowerCase()
+    .replaceAll('ё', 'е')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 if (!data || !Array.isArray(data.topics) || !data.topics.length) {
   fail('data.topics must be a non-empty array');
 }
@@ -86,11 +95,18 @@ for (const collectionName of ['tests', 'oral', 'practice']) {
 }
 
 const seenIds = new Set();
+const seenTestQuestions = new Map();
 
 for (const item of data.tests ?? []) {
   validateId(item, seenIds, 'tests');
   validateTopicAndDifficulty(item, 'tests');
   if (!item.question?.trim()) fail(`tests ${item.id}: missing question`);
+  const normalizedQuestion = normalizeQuestion(item.question);
+  if (seenTestQuestions.has(normalizedQuestion)) {
+    fail(`tests ${item.id}: duplicate question text with ${seenTestQuestions.get(normalizedQuestion)}`);
+  } else {
+    seenTestQuestions.set(normalizedQuestion, item.id);
+  }
   if (!Array.isArray(item.options) || item.options.length < 2 || item.options.length > 4) {
     fail(`tests ${item.id}: expected from two to four options`);
   }
@@ -98,6 +114,17 @@ for (const item of data.tests ?? []) {
     fail(`tests ${item.id}: answer index is out of options range`);
   }
   if (!item.explanation?.trim()) fail(`tests ${item.id}: missing explanation`);
+  if (item.optionExplanations !== undefined) {
+    if (!Array.isArray(item.optionExplanations) || item.optionExplanations.length !== item.options.length) {
+      fail(`tests ${item.id}: optionExplanations must match options length`);
+    } else {
+      item.optionExplanations.forEach((text, index) => {
+        if (!String(text).trim()) {
+          fail(`tests ${item.id}: missing option explanation ${index + 1}`);
+        }
+      });
+    }
+  }
   validateNoLiteralNewlineEscapes(item);
 
   const normalizedOptions = item.options.map(option => String(option).trim().toLowerCase());

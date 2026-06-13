@@ -227,6 +227,25 @@ button.copy { background: #f0f3f8; color: var(--text); padding: 9px 12px; }
 .card.checked .explanation { display: block; }
 .correct-answer { color: var(--ok); font-weight: 800; }
 .wrong-answer { color: var(--bad); font-weight: 800; }
+.option-explanations {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.option-explanations ul {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.option-explanations li {
+  display: grid;
+  gap: 3px;
+}
+.option-explanations span {
+  color: var(--muted);
+}
 .result {
   margin: 12px 0;
   font-weight: 800;
