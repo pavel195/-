@@ -27,10 +27,11 @@ const expectedTestsByTopic = new Map([
   ['АНАЛИЗ ТЕКСТОВЫХ ДАННЫХ', 20],
   ['JAVA', 14]
 ]);
-const expectedPracticeCount = 16;
+const expectedPracticeCount = 26;
 const expectedPracticeByTopic = new Map([
   ['АЛГОРИТМЫ И СТРУКТУРА ДАННЫХ', 6],
-  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 10]
+  ['ПРОГРАММИРОВАНИЕ НА PYTHON', 10],
+  ['SQL', 10]
 ]);
 const topics = new Set(data?.topics ?? []);
 
